@@ -93,71 +93,88 @@ An evaluation of the final applied project against the initial project objective
 To conclude, a brief summary of the context and objectives to remind the reader about the overall rationale and goals of the project. Key insights will be identified and reflected on. A final analysis will describe the teams overall experience and what the team learned while working on a project similar to one encountered in the software industry. 
 
 
-
-
-
-
-
-
 \chapter{Methodology}
+The first project meeting took place in the final week of September 2020. This meeting consisted of analysing the applied project requirements that had been defined and outlined. The team agreed to choose a topic that would be informative yet beneficial to the end user. It was concluded that the final idea and architecture of the solution should be finalised as soon as possible to allow for necessary research and planned development.
+
+\vspace{5mm} %5mm vertical space
+
+This chapter will explore the pre-development process, the approach the team took with development and testing, how the team dealt with various problems faced, and the influence of regular supervisor meetings along with a conclusion based what impact pre-development research had on the overall project direction. 
+
+\section{Technological Brainstorming and Initial Supervisor Meeting}
+Before development began and after the initial project topic was chosen each team member researched various technologies and concepts that could be potentially incorporated into the project. Soon after a brainstorming meeting was conducted to critically analyse each technology researched and the team decided whether each would be of good fit.
+
+\vspace{5mm} %5mm vertical space
+
+The team met prior to the initial supervisor meeting to produce effective ideas and questions to be asked relating to the overall architecture of the solution and the ultimate goals and objectives, these included:
+
+\begin{itemize}
+
+    \item \textbf{What other research areas should be analysed before development is conducted?}
+
+    \item \textbf{What technologies would be of best fit for our project?}
+    
+    \item \textbf{What benefits would certain methodologies posses compared to others?}
+    
+\end{itemize}
+
+During the initial supervisor meeting the project idea, potential research, development technologies, development and collaboration approaches were discussed. The team were advised to spend the next few weeks to consider and finalise the overall nature of how the applied project will be implemented.
+
+\vspace{5mm} %5mm vertical space
+
+After the supervisor meeting the team decided to take this advise on board. Each member focused on researching the What? Why? How? of the project methodologies, idea and the overall end user experience and relevance. Once research was carried out the team had a team meeting to discuss and critically analyse the findings. Some questions asked were as follows:
+
+\begin{itemize}
+
+    \item \textbf{What approach to development and collaboration would be best to adapt?}
+    
+    \item \textbf{Would the chosen project idea be relevant to an end user?}
+    
+     \item \textbf{Would the chosen methodologies be of a professional standard?}
+    
+    \item \textbf{How would the chosen technologies fit together as a whole?}
+    
+    \item \textbf{Is the scope an appropriate size for a three person project?}
+    
+\end{itemize}
+
+\section{Development Methodology Consideration}
+There were numerous possible methodologies to consider. After discussions with team members, the team agreed that using \textbf{Waterfall} and \textbf{Agile} together would be beneficial to project progression. 
+
+
+\vspace{70mm} %5mm vertical space
+
+MORE RESEARCH HERE? MAYBE SURVEY?
+
+
+\section{Determining the Development Methodology}
+Following the decision to use both Agile and Waterfall as an approach to software development, the team began to research the advantages and disadvantages of both, along with deciding which methodology would be best to take when considering the scope, project goals and time frame. A critical analysis and overview of both methodologies were made and a conclusion based on the practical analysis of each in relation to the project was carried out.
+
+\section{Waterfall}
+
+ \begin{center}    
+      \includegraphics[scale=0.9]{img/Waterfall.png}
+\end{center}
+
+\section{Agile}
+
+\begin{center}    
+      \includegraphics[scale=0.9]{img/Agile.png}
+\end{center}
+
+
+
+\vspace{70mm} %5mm vertical space
+
 About one to two pages.
 Describe the way you went about your project:
 \begin{itemize}
 \item Agile / incremental and iterative approach to development. Planning, meetings.
 \item What about validation and testing? Junit or some other framework.
 \item If team based, did you use GitHub during the development process.
-\item Selection criteria for algorithms, languages, platforms and technolo-gies.
+\item Selection criteria for algorithms, languages, platforms and technologies.
 \end{itemize}
 Check out the nice graphs in Figure \ref{tikz:graphs}, and the nice diagram in Figure \ref{tikz:mydiagram}.
 
-\begin{figure}
-  \centering
-  \begin{tikzpicture}
-  \begin{scope}[every node/.style={circle,thick,draw}]
-  \node (a) at (0,2) {a};
-  \node (b) at (2,2) {b};
-  \node (c) at (2,0) {c};
-  \node (d) at (0,0) {d};
-  \end{scope}
-  \begin{scope}[every edge/.style={draw=black,thick}]
-  \path (a) edge (b);
-  \path (b) edge (c);
-  \path (b) edge (d);
-  \path (c) edge (d);
-  \end{scope}
-  \node () at (1,-1) {$G_1$};
-  \end{tikzpicture}
-  \hspace{1.5cm}
-  \begin{tikzpicture}
-  \begin{scope}[every node/.style={circle,thick,draw}]
-  \node (1) at (0,2) {a};
-  \node (2) at (2,2) {b};
-  \node (3) at (2,0) {c};
-  \node (4) at (0,0) {d};
-  \end{scope}
-  \begin{scope}[every edge/.style={draw=black,thick}]
-  \path (1) edge (2);
-  \path (1) edge (3);
-  \path (1) edge (4);
-  \path (3) edge (4);
-  \end{scope}
-  \node () at (1,-1) {$G_2$};
-  \end{tikzpicture}
-  \caption{Nice pictures}
-  \label{tikz:graphs}
-\end{figure}
-
-
-\begin{figure}
-  \centering
-  \begin{tikzpicture}[node distance=6cm]
-  \node (a) [rect] {A Big Blue Block};
-  \node (b) [oval, right of=a] {And His Oval Friend};
-  \draw [line] (a) -- (b);
-  \end{tikzpicture}
-  \caption{Nice pictures}
-  \label{tikz:graphs}
-\end{figure}
 
 
 \chapter{Technology Review}
