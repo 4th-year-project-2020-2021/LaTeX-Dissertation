@@ -244,7 +244,7 @@ Check out the nice graphs in Figure \ref{tikz:graphs}, and the nice diagram in F
 
 
 \chapter{Technology Review}
-This chapter will outline the technology used and the reasoning for using a particular technology. Below is a list of technologies used, descriptions of the technologies at a conceptual level are included for each technology.
+This chapter will outline the technology used and the reasoning for choosing a particular technology. Below is a list of technologies used, descriptions of the technologies at a conceptual level are included for each technology.
 \begin{itemize}
 \item Git
 \item GitHub
@@ -261,7 +261,8 @@ This chapter will outline the technology used and the reasoning for using a part
 
 \end{itemize}
 
-\section{Git}
+\section{Version Control}
+\subsection{Git}
 Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency. It is a free and open source software distributed under the terms of the GNU General Public License version 2.
 Git allows and encourages the user to have multiple local branches that can be entirely independent of each other. The creation, merging, and deletion of those lines of development takes seconds. [SN 1] 
 Git is installed and maintained on the users local system and provides a record of ongoing programming versions. It allows developers to rollback to an older version of the code if required.
@@ -270,14 +271,15 @@ There are other popular version control systems for example Apache SVN or CVS, t
       \includegraphics[scale=0.7]{img/git.PNG}
 \end{center}
 
-\section{GitHub}
+\subsection{GitHub}
 GitHub is a web based code hosting platform for version control and collaboration. It lets users work together on projects from anywhere.[SN 2] https://guides.github.com/activities/hello-world/
 GitHub provides students of GMIT with free accounts, for this project a free account was sufficient as there is a facility to make the project public or private. Using GitHub allowed the team to work entirely remotely.
 \begin{center}    
       \includegraphics[scale=0.5]{img/github.PNG}
 \end{center}
 
-\section{Flask}
+\section{Backend}
+\subsection{Flask}
 Flask is a micro web framework written in Python. It is classified as a microframework because it does not require particular tools or libraries. The “micro” in microframework means Flask aims to keep the core simple but extensible. It has no database abstraction layer, form validation, or any other components where pre-existing third-party libraries provide common functions. However, Flask supports extensions that can add application features as if they were implemented in Flask itself. Extensions exist for object-relational mappers, form validation, upload handling, various open authentication technologies and several common framework related tools.[SN 3] \url{https://en.wikipedia.org/wiki/Flask_(web_framework)}
 The architecture of our project required a back end,front end and a database. We had some experience with MEAN and MERN stacks from previous college projects. More recently we had some exposure to Flask as a backend in Emerging Technology project. We had decided to use React for our frontend, which we had used for a previous MERN(Mongo, Express, React, NodeJs) project. We had also used Angular previously for a MEAN(Mongo, Express, Angular, NodeJs) project but decided to use React.There will be further discussion in the React section about why React was chosen. Part of the teams learning objectives was to use new technologies, to the team, and learn as much as possible about them. For this reason we chose Flask as our backend, as it offered flexible options re database and front end choices. From implementing Flask and reading documentation, the idea of virtual environments was introduced. Virtual environments are independent groups of Python libraries, one for each project. Packages installed for one project will not affect other projects or the operating system’s packages.[SN 4] \url{https://flask.palletsprojects.com/en/1.1.x/installation/}
 Most importantly using Flask allowed us to write our own API calls to our MongoDB Atlas database.
@@ -286,7 +288,8 @@ Most importantly using Flask allowed us to write our own API calls to our MongoD
       \includegraphics[scale=0.7]{img/flask.PNG}
 \end{center}
 
-\section{React}
+\section{Frontend}
+\subsection{React}
 React is a JavaScript library, used for building reusable components.React allows users to design simple views for each state in their application, and React will efficiently update and render just the right components when the data changes.
 Declarative views make the code more predictable and easier to debug. Build encapsulated components that manage their own state, then compose them to make complex UIs.
 React does not make assumptions about the users technology stack, allowing the development of new features in React without rewriting existing code. [SN 5] \url{https://reactjs.org/}
@@ -330,8 +333,8 @@ Choice of FrontEnd Technology - can be looked at from 2 perspectives 1. A learni
 2. A good fit for the task we were trying to achieve within the project.
 
 Having completed the project, we feel it had been a good choice from both of those perspectives. 
-
-\section{MongoDB Atlas}
+\section{Database}
+\subsection{MongoDB Atlas}
 MongoDB Atlas is a database as a service, a cloud based service.
 When designing the application we were unsure what format our data would take, if the data was purely relational it would only need a SQL type database, if the data was non relational it would need a noSQL database. 
 NoSQL databases (aka "not only SQL") are non tabular, and store data differently than relational tables. NoSQL databases come in a variety of types based on their data model. The main types are document, key-value, wide-column, and graph. They provide flexible schemas and scale easily with large amounts of data and high user loads.  NoSQL databases can store relationship data—they just store it differently than relational databases do. When compared with SQL databases, many find modeling relationship data in NoSQL databases to be easier than in SQL databases, because related data doesn’t have to be split between tables. he simplest type to describe is the document database, in which it would be natural to combine both the basic information and the customer information in one JSON document. In this case, each of the SQL column attributes would be fields and the details of a customer’s record would be the data values associated with each field.
@@ -351,7 +354,8 @@ This helped solidify  some of the central properties of distributed systems whic
       \includegraphics[scale=0.5]{img/clusterDB.PNG}
 \end{center}
 
-\section{JavaScript}
+\section{Languages Used}
+\subsection{JavaScript}
 JavaScript is high-level, often just-in-time compiled, and multi-paradigm. It has curly-bracket syntax, dynamic typing, prototype-based object-orientation, and first-class functions. 
 Alongside HTML and CSS, JavaScript is one of the core technologies of the World Wide Web. Over 97\% of websites use it client-side for web page behavior, often incorporating third-party libraries. All major web browsers have a dedicated JavaScript engine to execute the code on the user's device. 
 As a multi-paradigm language, JavaScript supports event-driven, functional, and imperative programming styles. It has application programming interfaces (APIs) for working with text, dates, regular expressions, standard data structures, and the Document Object Model (DOM).
@@ -363,22 +367,57 @@ JSX allows us to write HTML elements in JavaScript and place them in the DOM wit
 React encourages the use of JSX for development, though a developer could use JavaScript if preferred.
 The team used JFX for the project.
 
-\section{Python}
+\subsection{Python}
 Python is an interpreted, high-level and general-purpose programming language. Python's design philosophy emphasizes code readability with its notable use of significant indentation. Its language constructs and object-oriented approach aim to help programmers write clear, logical code for small and large-scale projects.
 Python is dynamically-typed and garbage-collected. It supports multiple programming paradigms, including structured (particularly, procedural), object-oriented and functional programming.[SN 10] \url{https://en.wikipedia.org/wiki/Python_(programming_language)}
 Flask is written in python, the api backend of the project is written on python code. All api routes use Flask Blueprint().
 Flask Blueprints encapsulate functionality, such as views, templates, and other resources. To get a taste for how a Flask Blueprint would work, you can refactor the previous application by moving the index view into a Flask Blueprint. To do so, you have to create a Flask Blueprint that contains the index view and then use it in the application.[SN 11] \url{https://realpython.com/flask-blueprint/}
 
-\section{Visual Studio Code}
+\section{Development Environment}
+\subsection{Visual Studio Code}
 Visual Studio Code is a lightweight but powerful source code editor which runs on your desktop and is available for Windows, macOS and Linux. It comes with built-in support for JavaScript, TypeScript and Node.js and has a rich ecosystem of extensions for other languages (such as C++, C\#, Java, Python, PHP, Go) and runtimes (such as .NET and Unity).[SN 12] \url{https://code.visualstudio.com/docs}
 According to Visual Studio Code,"Visual Studio Code combines the simplicity of a source code editor with powerful developer tooling, like IntelliSense code completion and debugging.
 First and foremost, it is an editor that gets out of your way. The delightfully frictionless edit-build-debug cycle means less time fiddling with your environment, and more time executing on your ideas."[SN 13] \url{https://code.visualstudio.com/docs/editor/whyvscode}
 The team agrees, VS code is extremely easy to use, is much faster than other IDE's, the inbuilt support for JS and Node.js is something we considered, it also allowed us to develop the backend which was written in python, it allowed seamless integration between the different coding languages. **** need to finesse this section *******
 
 
+\section{FireBase}
+
+\section{FireStore}
+
+\section{D3}
+
 \chapter{System Design}
+\begin{center}    
+      \includegraphics[scale=0.5]{img/basic architecture.png}
+\end{center}
+
+\section{Architecture Overview}
+At the beginning  the project did not have a defined architecture as the project was using external apis to get data and some of the data was stored in the project itself. The front end was worked on initially, once the frontend was functioning a decision was made about the architecture of the project. Flask was decided on as the backend, which would interact with the database and the frontend.
+The intention was always to have a three tier architecture but it was not fully decided as to which technologies would be used. Once the architecure was finalised, we wrote our own api calls to the database. 
+
+
+While researching mongoDB and Flask working together, we found articles on the web that described the stack were developing it was called FReMP. Unlike MEAN or MERN this acronym seems to be new and does not have as much documentation. Our architecture also includes a login facility using Firestore and some of the static data for the components rendering D3 data is stored in Firebase. 
+
 FReMP stack is a very powerful and highly scalable stack which reduces complexity of back-end code, deals with the database requests very quickly and brings a user friendly interface for front-end users.
 
+We had decided because React does not tie a developer to use a particular backend, and we wanted to learn more about Flask and python, which we had some familiarity with.  
+
+
+
+\section{Three tier architecture}
+\subsection{Data Tier}
+MongoDB Atlas was used to mange some of the data required for the project. Firebase was used for data that rendered D3 images. External api's were used for the Covid-19 data. These api's are updated daily. The app allows a user to record temperature, symptoms and leave a rating or review, this information is stored in MongoDB and can be retrieved. Everytime the a temperature is entered a temperature graph dynamically changes. Pymongo, a python library specifically for interacting with a Mongo database. We chose a cloud based database MongoDB.
+
+\section{Backend - Logic Tier}
+The API is written with Flask. Also firebase/firestore? 
+Requests from the app are sent by a request from the code in the frontend, using Js or JSX.
+Need to add more to this - once we understand what exactly is involved with the APi's.
+Using python library Blueprint.
+
+\section{Frontend - Application Tier}
+React was used to develop the client side of the application. 
+More info about this element of the project goes here.
 \begin{center}    
       \includegraphics{img/fremp.PNG}
 \end{center}
@@ -389,7 +428,7 @@ FReMP stack is a very powerful and highly scalable stack which reduces complexit
 \item MongoDB Atlas
 \item Python
 
-These technologies were chosen as they give developers the ability to handle huge volume of data and, at the same time, render a nice modern interface on the client side. 
+These technologies were chosen as they give developers the ability to handle large volumes of data and, at the same time, render a nice modern interface on the client side. 
 \item Architecture, UML etc. An overview of the different components of the system. Diagrams etc… Screen shots etc.
 \end{itemize}
 
