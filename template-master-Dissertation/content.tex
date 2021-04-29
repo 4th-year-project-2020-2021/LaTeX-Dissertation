@@ -300,7 +300,7 @@ See example code from the project.
 \end{center}
 
 When researching what front end software to use we considered Angular and React. From our research we compared the two technologies. Included below is a table outlining the advantages and disadvantages of both.
-\begin{table}[h!]
+\begin{table}[ht]
 \centering
 \begin{tabular}{ |p{3cm}||p{3cm}|p{3cm}|p{3cm}| }
  \hline
@@ -497,11 +497,22 @@ More info about this element of the project goes here.
 \item MongoDB Atlas
 \item Python
 
+
 These technologies were chosen as they give developers the ability to handle large volumes of data and, at the same time, render a nice modern interface on the client side. 
 \item Architecture, UML etc. An overview of the different components of the system. Diagrams etc… Screen shots etc.
 \end{itemize}
 
-\begin{table}[h]
+\section{Heroku - Deployment}
+\begin{center}    
+      \includegraphics{img/HerokuArchitecture.png}
+\end{center}
+Heroku is a platform as a service based on a managed container system, with integrated data services and a powerful ecosystem, for deploying and running modern apps. [SN 14] https://www.heroku.com/platform.
+We deployed the project to the web using Heroku. We investigated different options for deployment, there are many companies that offer a free option or trial PaaS product, companies like Plesk, Cloudify and Heroku, as well as Open Source Paas tools.The project deployment was implemented towards the end of project development, because we had prior experience with Heroku and limited time we decided to try Heroku first. If we felt that Heroku was not suitable we would try another platform like Plesk or an open source option like Dokku, but Heroku worked well and with the time frame left we decided there was no need to investigate another option. Heroku's free option was just about sufficient for our app.
+\begin{center}    
+      \includegraphics[scale=0.6]{img/HerokuStats.PNG}
+\end{center}
+
+\begin{table}[ht]
   \centering
   \begin{tabular}{x{2cm}p{3cm}}
     \toprule \\
