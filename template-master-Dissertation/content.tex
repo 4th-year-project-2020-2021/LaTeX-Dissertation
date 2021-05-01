@@ -300,7 +300,7 @@ See example code from the project.
 \end{center}
 
 When researching what front end software to use we considered Angular and React. From our research we compared the two technologies. Included below is a table outlining the advantages and disadvantages of both.
-\begin{table}[h!]
+\begin{table}[ht]
 \centering
 \begin{tabular}{ |p{3cm}||p{3cm}|p{3cm}|p{3cm}| }
  \hline
@@ -382,21 +382,32 @@ The team agrees, VS code is extremely easy to use, is much faster than other IDE
 
 
 \section{FireBase}
-Firebase is a Backend-as-a-Service (Baas) and it is categorized as a NoSQL database program, which stores data in JSON-like documents.
-In Firebase, a document is a set of key-value pairs defined by a schema. A group of documents makes up a collection.
+Firebase uses what is known as a NoSQL database for storing data in a Realtime Database. As the name suggest this means that data is not stored in the tables and rows found in relational database management systems (RDBMS) such as Oracle Database or Microsoft SQL Server. Nor is the data accessed using Structured Query Language (SQL) statements. Instead, the data is stored in the form of a JSON object. JSON is an acronym for JavaScript Object Notation and it defines a syntax used to transmit data in a format that is both lightweight and easy for both humans and software to read, write and understand.
+
+JSON objects typically consist of a key/value pair, where the key uniquely identifies the object within the database and the value represents the data that is being stored. Multiple JSON objects are structured in the form of a JSON tree.
+
 The Firebase SDK supports programming in C++, Java, JavaScript, JavaScript/Node.js, Objective-C, and Swift. Angular, Backbone, Ember and React are supported through bindings to the database.
 \subsection{Authentication}
 
 \begin{center}    
-      \includegraphics[scale=1]{img/FirebaseAuth.PNG}
+      \includegraphics[scale=0.4]{img/auth.PNG}
 \end{center}
 
 Firebase Authentication provides backend services, easy-to-use SDKs, and ready-made UI libraries to authenticate users to our app. 
 It supports authentication using email and password accounts, phone auth, Google, Facebook, Twitter, and GitHub login, and more. The Firebase Authentication (SDK) can be used to manually integrate one or more sign-in methods into an app.
 To sign a user into our app, we first get authentication credentials from the user. These credentials can be the user's email address and password, or an OAuth token from a federated identity provider. Then, we pass these credentials to the Firebase Authentication SDK. Our backend services will then verify those credentials and return a response to the client.
-After a successful sign in, we can access the user's basic profile information.
+After a successful sign in, it will allow the navigation of sensitive routes.
+
+\begin{center}    
+      \includegraphics[scale=0.55]{img/login.PNG}
+\end{center}
 
 \subsection{Realtime database}
+
+\begin{center}    
+      \includegraphics[scale=0.4]{img/Firebasedb.PNG}
+\end{center}
+
 The Firebase Realtime Database is a cloud-hosted NoSQL database.
 Data is synced across all clients in real-time and remains available even when an app goes offline.
 Whenever you update data in the real-time database, it stores the data in the cloud and simultaneously notifies all interested devices in milliseconds. The real-time database is also optimized for offline use. 
@@ -453,7 +464,7 @@ It takes two simple steps:
 Our ChartWrapper.js will look like this :
 
 \begin{center}    
-      \includegraphics[scale=0.8]{img/D3Ref.PNG}
+      \includegraphics[scale=0.6]{img/D3Ref.PNG}
 \end{center}
 
 \chapter{System Design}
@@ -497,11 +508,22 @@ More info about this element of the project goes here.
 \item MongoDB Atlas
 \item Python
 
+
 These technologies were chosen as they give developers the ability to handle large volumes of data and, at the same time, render a nice modern interface on the client side. 
 \item Architecture, UML etc. An overview of the different components of the system. Diagrams etc… Screen shots etc.
 \end{itemize}
 
-\begin{table}[h]
+\section{Heroku - Deployment}
+\begin{center}    
+      \includegraphics{img/HerokuArchitecture.png}
+\end{center}
+Heroku is a platform as a service based on a managed container system, with integrated data services and a powerful ecosystem, for deploying and running modern apps. [SN 14] https://www.heroku.com/platform.
+We deployed the project to the web using Heroku. We investigated different options for deployment, there are many companies that offer a free option or trial PaaS product, companies like Plesk, Cloudify and Heroku, as well as Open Source Paas tools.The project deployment was implemented towards the end of project development, because we had prior experience with Heroku and limited time we decided to try Heroku first. If we felt that Heroku was not suitable we would try another platform like Plesk or an open source option like Dokku, but Heroku worked well and with the time frame left we decided there was no need to investigate another option. Heroku's free option was just about sufficient for our app.
+\begin{center}    
+      \includegraphics[scale=0.6]{img/HerokuStats.PNG}
+\end{center}
+
+\begin{table}[ht]
   \centering
   \begin{tabular}{x{2cm}p{3cm}}
     \toprule \\
@@ -515,6 +537,49 @@ These technologies were chosen as they give developers the ability to handle lar
 \end{table}
 
 \chapter{System Evaluation}
+The goal of this project was to develop a data visualization website that analyses various viruses such as Covid-19, Sars, Mers and Smallpox using different technologies. 
+
+\section{Evaluation of Objectives}
+
+\section{Testing}
+
+\subsection{Unit Testing}
+The goal is to verify that each unit of our application, considered in isolation, is working correctly.
+
+\subsubsection{jest}
+Jest is a JavaScript unit testing framework, used by Facebook to test services and React applications.
+Jest also provides Snapshot testing, the ability to create a rendered ‘snapshot’ of a component and compare it to a previously saved ‘snapshot’. The test will fail if the two do not match.
+
+Jest was used to test Firebase and Firestore functions.
+Every time I used Firebase, I ran into the problem of how to test Firebase's database and authentication. Since I am using Jest as my default testing environment, I figured everything I needed already comes with Jest.
+
+\begin{center}    
+      \includegraphics[scale=0.6]{img/jest.PNG}
+\end{center}
+
+\subsection{System Testing}
+\subsubsection{selenium}
+Selenium is a portable framework for testing web applications. Selenium provides a playback tool for authoring functional tests without the need to learn a test scripting language.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\subsection{----}
 As many pages as needed.
 \begin{itemize}
 \item Prove that your software is robust. How? Testing etc. 
