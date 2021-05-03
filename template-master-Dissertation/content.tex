@@ -387,7 +387,7 @@ Firebase uses what is known as a NoSQL database for storing data in a Realtime D
 JSON objects typically consist of a key/value pair, where the key uniquely identifies the object within the database and the value represents the data that is being stored. Multiple JSON objects are structured in the form of a JSON tree.
 
 The Firebase SDK supports programming in C++, Java, JavaScript, JavaScript/Node.js, Objective-C, and Swift. Angular, Backbone, Ember and React are supported through bindings to the database.
-\subsection{Authentication}
+\subsection{User Authentication}
 
 \begin{center}    
       \includegraphics[scale=0.4]{img/auth.PNG}
@@ -397,6 +397,7 @@ Firebase Authentication provides backend services, easy-to-use SDKs, and ready-m
 It supports authentication using email and password accounts, phone auth, Google, Facebook, Twitter, and GitHub login, and more. The Firebase Authentication (SDK) can be used to manually integrate one or more sign-in methods into an app.
 To sign a user into our app, we first get authentication credentials from the user. These credentials can be the user's email address and password, or an OAuth token from a federated identity provider. Then, we pass these credentials to the Firebase Authentication SDK. Our backend services will then verify those credentials and return a response to the client.
 After a successful sign in, it will allow the navigation of sensitive routes.
+Authenticated user will access routes that previously locked.
 
 \begin{center}    
       \includegraphics[scale=0.55]{img/login.PNG}
@@ -537,14 +538,26 @@ We deployed the project to the web using Heroku. We investigated different optio
 \end{table}
 
 \chapter{System Evaluation}
-The goal of this project was to develop a data visualization website that analyses various viruses such as Covid-19, Sars, Mers and Smallpox using different technologies. 
+ 
+\section{Chapter Overview}
+In the System Evaluation chapter we will touch on the overall design of the system.
+We will evaluate whether or not they were met in the completion of the web application.
+The testing went into the project will also be documented.
+We will reviewing any limitations and areas of improvement of this project.
 
-\section{Evaluation of Objectives}
+\section{Project Objectives}
+Initially the goal of this project was to develop a data visualization website that analyses various viruses such as Covid-19, Sars, Mers and Smallpox using different technologies.
 
 \section{Testing}
+This section will discuss how the application was tested.
+The entire system is fully tested to ensure that there are no faults. 
+We felt that it is essential to fully test our web application in the development as well as in the completion of the project. 
+Some of the testing we conducted included Unit Testing and System
+
 
 \subsection{Unit Testing}
-The goal is to verify that each unit of our application, considered in isolation, is working correctly.
+Unit Testing is the testing of individual units or components of a software.
+The reason that is done this way is to verify that each unit of our application, considered in isolation, is working correctly.
 
 \subsubsection{jest}
 Jest is a JavaScript unit testing framework, used by Facebook to test services and React applications.
@@ -557,35 +570,30 @@ Every time I used Firebase, I ran into the problem of how to test Firebase's dat
       \includegraphics[scale=0.6]{img/jest.PNG}
 \end{center}
 
+\subsubsection{PyTest}
+PyTest is a testing framework that allows users to write test codes using Python programming language. It helps you to write simple and scalable test cases for databases, APIs, or UI. PyTest is mainly used for writing tests for APIs. It helps to write tests from simple unit tests to complex functional tests.
+
 \subsection{System Testing}
+
 \subsubsection{selenium}
-Selenium is a portable framework for testing web applications. Selenium provides a playback tool for authoring functional tests without the need to learn a test scripting language.
+Selenium is a portable framework for testing web applications. This allows the user to create tests which will monitor the users actions performed and log them so that these tests can be run and re-run with the click of a button.
 
+\section{Limitations and areas of Improvement in this project}
 
+\subsection{Limitations}
+It is essential for us to have the application up and running on the cloud. As of now the biggest limitation we are facing is not having our flask back end working properly with Heroku. 
 
+-------------------------
+This part will be updated later this week.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+\subsection{Improvements}
+Improvements that can be made to the current system could include adding more features..
 
 
 \subsection{----}
-As many pages as needed.
 \begin{itemize}
-\item Prove that your software is robust. How? Testing etc. 
 \item Use performance benchmarks (space and time) if algorithmic.
 \item Measure the outcomes / outputs of your system / software against the objectives from the Introduction.
-\item Highlight any limitations or opportuni-ties in your approach or technologies used.
 \end{itemize}
 
 \chapter{Conclusion}
