@@ -454,7 +454,9 @@ Firebase is a Backend-as-a-Service that was founded in 2011 that provided develo
 
 In 2014, Google acquired Firebase and has since built it into a full fledged mobile and web development platform with over 19 different products and services with more than 1.5 million developers worldwide.
 
-Firebase uses what is known as a NoSQL database for storing data in a Realtime Database. As the name suggest this means that data is not stored in the tables and rows found in relational database management systems (RDBMS) such as Oracle Database or Microsoft SQL Server. Nor is the data accessed using Structured Query Language (SQL) statements. Instead, the data is stored in the form of a JSON object. JSON is an acronym for JavaScript Object Notation and it defines a syntax used to transmit data in a format that is both lightweight and easy for both humans and software to read, write and understand.
+Firebase uses what is known as a NoSQL database for storing data in a Realtime Database. As the name suggest this means that data is not stored in the tables and rows found in relational database management systems (RDBMS) such as Oracle Database or Microsoft SQL Server. Nor is the data accessed using Structured Query Language (SQL) statements. Instead, the data is stored in the form of a JSON object. 
+
+JSON is an acronym for JavaScript Object Notation and it defines a syntax used to transmit data in a format that is both lightweight and easy for both humans and software to read, write and understand.
 
 JSON objects typically consist of a key/value pair, where the key uniquely identifies the object within the database and the value represents the data that is being stored. Multiple JSON objects are structured in the form of a JSON tree.
 
@@ -470,7 +472,7 @@ The Firebase SDK supports programming in C++, Java, JavaScript, JavaScript/Node.
 
 \subsection{User Authentication}
 
-<<<<<<< HEAD
+
 \begin{figure}
     \centering
     \includegraphics[scale=0.5]{img/auth.PNG}
@@ -480,13 +482,6 @@ The Firebase SDK supports programming in C++, Java, JavaScript, JavaScript/Node.
 
 Firebase Authentication provides backend services, easy-to-use SDKs, and ready-made UI libraries to authenticate users to our app.
 
-=======
-\begin{center}
-      \includegraphics[scale=0.4]{img/auth.PNG}
-\end{center}
-
-Firebase Authentication provides backend services, easy-to-use SDKs, and ready-made UI libraries to authenticate users to our app.
->>>>>>> 56dd2e8b5180e8056eea060c041318782e4ed604
 It supports authentication using email and password accounts, phone auth, Google, Facebook, Twitter, and GitHub login, and more. The Firebase Authentication (SDK) can be used to manually integrate one or more sign-in methods into an app.
 
 To sign a user into our app, we first get authentication credentials from the user. 
@@ -496,7 +491,6 @@ Our backend services will then verify those credentials and return a response to
 After a successful sign in, it will allow the navigation of sensitive routes.
 Authenticated user will access routes that previously locked.
 
-<<<<<<< HEAD
 \begin{figure}
     \centering
     \includegraphics[scale=0.55]{img/login.PNG}
@@ -513,17 +507,7 @@ Authenticated user will access routes that previously locked.
     \caption{Storing and managing our data}
     \label{fig:my_label4}
 \end{figure}
-=======
-\begin{center}
-      \includegraphics[scale=0.55]{img/login.PNG}
-\end{center}
 
-\subsection{Realtime database}
-
-\begin{center}
-      \includegraphics[scale=0.4]{img/Firebasedb.PNG}
-\end{center}
->>>>>>> 56dd2e8b5180e8056eea060c041318782e4ed604
 
 The Firebase Realtime Database is a cloud-hosted NoSQL database.
 Data is synced across all clients in real-time and remains available even when an app goes offline.
@@ -543,7 +527,7 @@ All documents must be stored in collections. Documents can contain subcollection
 
 
 We used Cloud Firestore for our Message Board.
-<<<<<<< HEAD
+
 User identity is an important security concept. Different users have different data, and sometimes they have different capabilities.
 
 For example each message is associated with the user that created it. Users may also be able to delete their own messages, but not messages posted by other users.
@@ -555,7 +539,7 @@ If we look at the actual database we can see that each message has an owner and 
 \begin{figure}
     \centering
     \includegraphics[scale=0.75]{img/message.PNG}
-    \caption{How we store message}
+    \caption{How we manage messages}
     \label{fig:my_label4}
 \end{figure}
 
@@ -565,20 +549,12 @@ If we look at the actual database we can see that each message has an owner and 
     \caption{Storing and managing messages}
     \label{fig:my_label4}
 \end{figure}
-=======
-The SDK handles all the state management and data syncing in between the client and server. I set up a collection of messages and then for each of these messages create a sub collection of messages.
-If we look at the actual database we can see that each message has an owner and then each individual message is an object.
-
-\begin{center}
-      \includegraphics[scale=0.6]{img/FirestoreMessage.PNG}
-\end{center}
->>>>>>> 56dd2e8b5180e8056eea060c041318782e4ed604
 
 It contains the user ID, a created timestamp and the message content.
 When a user is logged in and they created a new message it will create this document with their user ID as the owner ID.
 
 \section{D3}
-<<<<<<< HEAD
+
 
 \begin{figure}
     \centering
@@ -589,9 +565,6 @@ When a user is logged in and they created a new message it will create this docu
 
 D3.js (Data-Driven-Documents) is an open-source JavaScript library that lets you create dynamic data visualizations in web browsers using SVC, HTML 5, and CSS.
 Most data visualization tools require Python, D3.js visualizations are created entirely using JavaScript.
-=======
-D3.js is an an open-source JavaScript library for creating custom interactive data visualizations in the web browser using SVG, HTML and CSS.
->>>>>>> 56dd2e8b5180e8056eea060c041318782e4ed604
 
 While most charting libraries (such as Chart.js and Highcharts) provide ready made charts D3 consists of a large set of building blocks from which custom charts or maps can be constructed.
 
@@ -622,13 +595,6 @@ It takes two simple steps:
 
 Our ChartWrapper.js will look like this :
 
-<<<<<<< HEAD
-
-=======
-\begin{center}
-      \includegraphics[scale=0.6]{img/D3Ref.PNG}
-\end{center}
->>>>>>> 56dd2e8b5180e8056eea060c041318782e4ed604
 
 \chapter{System Design}
 \begin{center}
@@ -639,20 +605,15 @@ Our ChartWrapper.js will look like this :
 The architecture of the project is a three tiered architecture, consisting of a front-end, a back-end and a data tier.
 Three-tier architecture is a well-established software application architecture that organizes applications into three logical and physical computing tiers: the presentation tier, or user interface; the application tier, where data is processed; and the data tier, where the data associated with the application is stored and managed.
 The chief benefit of three-tier architecture is that because each tier runs on its own infrastructure, each tier can be developed simultaneously by a separate development team, and can be updated or scaled as needed without impacting the other tiers.[SN 0]
-<<<<<<< HEAD
-=======
 
-The front end was worked on initially, once the front-end was functioning a decision was made about the architecture of the project. Flask was decided on as the back-end, which would interact with the database tier and the front-end.
-Once the architecture was finalised, we wrote our own api calls to the database.
->>>>>>> 56dd2e8b5180e8056eea060c041318782e4ed604
 
 The front end was worked on initially, once the front-end was functioning a decision was made about the architecture of the project. Flask was decided on as the back-end, which would interact with the database tier and the front-end.
 Once the architecture was finalised, we wrote our own api calls to the database.
 
-<<<<<<< HEAD
 
-=======
->>>>>>> 56dd2e8b5180e8056eea060c041318782e4ed604
+The front end was worked on initially, once the front-end was functioning a decision was made about the architecture of the project. Flask was decided on as the back-end, which would interact with the database tier and the front-end.
+Once the architecture was finalised, we wrote our own api calls to the database.
+
 While researching mongoDB and Flask working together, we found articles on the web that described the stack were developing it was called FReMP. Unlike MEAN or MERN this acronym seems to be new and does not have as much documentation. Our architecture also includes a login facility using Firestore and some of the static data for the components rendering D3 data is stored in Firebase.
 
 FReMP stack is a very powerful and highly scalable stack which reduces complexity of back-end code, deals with the database requests very quickly and brings a user friendly interface for front-end users.
@@ -716,10 +677,6 @@ We deployed the project to the web using Heroku. We investigated different optio
 
 \chapter{System Evaluation}
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 56dd2e8b5180e8056eea060c041318782e4ed604
 \section{Chapter Overview}
 In the System Evaluation chapter we will touch on the overall design of the system.
 We will evaluate whether or not the objectives were met in the completion of the web application.
@@ -731,16 +688,9 @@ Initially the goal of this project was to develop a data visualization website t
 
 \section{Testing}
 This section will discuss how the application was tested.
-<<<<<<< HEAD
-The entire system was fully tested to ensure that there were no faults.
+The entire system was fully tested to ensure that there were no faults in our web application.
 We felt that it was essential to fully test our web application in the development as well as in the completion of the project.
 Some of the testing that we conducted included Unit Testing and System Testing.
-
-=======
-The entire system is fully tested to ensure that there are no faults.
-We felt that it is essential to fully test our web application in the development as well as in the completion of the project.
-Some of the testing we conducted included Unit Testing and System
->>>>>>> 56dd2e8b5180e8056eea060c041318782e4ed604
 
 
 \subsection{Unit Testing}
@@ -758,7 +708,6 @@ Jest also provides Snapshot testing, the ability to create a rendered ‘snapsho
 Jest was used to test both Firebase and Firestore functions.
 Every time I used Firebase, I ran into the problem of how to test Firebase's database and authentication. Since I am using Jest as my default testing environment, I figured everything I needed already comes with Jest.
 
-<<<<<<< HEAD
 \begin{figure}
     \centering
     \includegraphics[scale=0.5]{img/jest.PNG}
@@ -779,45 +728,24 @@ We used the Firebase Emulators to run and automate unit tests in a local environ
     \label{fig:my_label4}
 \end{figure}
 
-=======
-\subsection{Pytest}
-\subsection{React Testing}
-\begin{center}
-      \includegraphics[scale=0.6]{img/jest.PNG}
-\end{center}
->>>>>>> 56dd2e8b5180e8056eea060c041318782e4ed604
-
 \subsubsection{PyTest}
 PyTest is a testing framework that allows users to write test codes using Python programming language. It helps you to write simple and scalable test cases for databases, APIs, or UI. PyTest is mainly used for writing tests for APIs. It helps to write tests from simple unit tests to complex functional tests.
 
 \subsection{System Testing}
 
-\subsubsection{selenium}
+\subsubsection{Selenium}
 Selenium is a portable framework for testing web applications. This allows the user to create tests which will monitor the users actions performed and log them so that these tests can be run and re-run with the click of a button.
 
 \section{Limitations and areas of Improvement in this project}
 
 \subsection{Limitations}
-<<<<<<< HEAD
 It is essential for us to have the application up and running on the cloud. As of now the biggest limitation we are facing is not having our flask back-end working properly with Heroku. 
 Currently our application works locally. Some of the functionalities that are required flask aren't displaying with Heroku, such as our rating and checking temperature functionalities.
-=======
-It is essential for us to have the application up and running on the cloud. As of now the biggest limitation we are facing is not having our flask back end working properly with Heroku.
->>>>>>> 56dd2e8b5180e8056eea060c041318782e4ed604
 
 
 \subsection{Improvements}
 Improvements that can be made to the current system could include adding more features. Initially, we had an idea of having an online symptom checker by using a chatbot powered by artificial intelligence. The user could diagnose symptoms for signs of Covid-19.
 
-<<<<<<< HEAD
-=======
-\subsection{----}
-\begin{itemize}
-\item Use performance benchmarks (space and time) if algorithmic.
-\item Measure the outcomes / outputs of your system / software against the objectives from the Introduction.
-\item Highlight any limitations or opportunities in your approach or technologies used.
-\end{itemize}
->>>>>>> 56dd2e8b5180e8056eea060c041318782e4ed604
 
 \chapter{Conclusion}
 About three pages.
@@ -843,7 +771,6 @@ About three pages.
 [SN 12] Blueprint; \url{https://realpython.com/flask-blueprint/}
 [SN 13] Visual Studio Code; \url{https://code.visualstudio.com/docs/editor/whyvscode}
 [SN 14] Heroku; \url{https://www.heroku.com/platform}
-<<<<<<< HEAD
 [SN 15] Firebase Authentication; \url{https://firebase.google.com/products/auth}
 [SN 17] Firebase Database; \url{https://firebase.google.com/products/realtime-database}
 [SN 18] Firestore; \url{https://firebase.google.com/products/firestore}
@@ -854,5 +781,3 @@ About three pages.
 [SN 23] PyTest; \url{https://thinkpalm.com/blogs/pytest-a-python-solution-for-test-automation/}
 [SN 24] Selenium; \url{https://en.wikipedia.org/wiki/Selenium_(software)}
 [SN 25] firebase; \url{https://codeburst.io/firebase-spend-more-time-developing-the-features-that-actually-matter-814f57a499af}
-=======
->>>>>>> 56dd2e8b5180e8056eea060c041318782e4ed604
