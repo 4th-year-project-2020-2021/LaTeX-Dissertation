@@ -13,32 +13,87 @@ This project was developed as part of a fifteen credit module by Grace Keane, Ji
 This chapter will serve as a prelude to the project. The context, objectives and metrics for success and failure will be defined, followed by a thorough summary of the project domain and an introduction into each chapter of the dissertation and its relevance.
 
 \section{Context}
-During the decision making process the team decided that the project must be relevant as well as interesting. The project must encourage the use of existing skills as well as allow for the natural development of new and relevant techniques and processes while also being worthy of scope.
+Why chose data visualisation as a subject for our Applied Project and Minor Dissertation? Towards the end of our third year in college, Ireland was shutdown and effectively put into a lockdown. All colleges, schools and areas where large amounts of people gather were closed or off limits. The reason for the lockdown was the outbreak of a disease which became known as Covid-19, a global pandemic. The first pandemic that the majority of the world's population will have ever experienced. The last global pandemic was the Spanish flu, which lasted from approx 1918 to 1920, this pandemic occurred in three waves, though not simultaneously around the globe.\cite{Spanishflu}\\
+The fact that our on campus learning was curtailed due to the Covid-19 outbreak has had an impact on our learning. Being software students, it was fascinating to see how much real time information was available coming from all directions. Sites like John Hopkins Dashboard tracked Covid-19's progress round the world on a daily basis. Starting off with what looked like small numbers at first, the amount of cases quickly exploded in countries like Italy and Iran, an example of exponential disease growth. If measures we not taken to halt the spread of the virus the rest of the world would eventually experience exponential growth of cases.\\
+
+\vspace{5mm}
+
+\textbf{Why Visualisation matters}\\
+There are two useful functions for data visualisation.\\
+a) The dissemination of public health information, with purpose of giving the clearest information possible to the general public.
+b) The effective modelling, prediction and forecasting of disease trends for scientists and policy makers.
+
+Exponential growth is a mathematical concept that is not properly understood by the majority of people.
+"People mistakenly perceive the coronavirus to grow in a linear manner, underestimating its actual potential for exponential growth."\cite{lammers2020correcting}\\
+\vspace{5mm}
+“The complex data are extremely challenging for our cognitive abilities. Visual analytics solutions may support knowledge discovery and problem solving if the needs of the different stakeholders, such as epidemiologists and environmental health specialists, are adequately addressed.”\cite{preim2020survey}
+
+It struck the team that the visual representation of data is a good explanatory tool to show how fast exponential growth can happen. As well as disseminating public health information to the general public and allows experts to perform predictions and modelling based on current trends. This information can help policy makers make the best decisions possible given current conditions.
+\vspace{2mm}
+"It can help researchers and policy makers to identify trends that could be overlooked if the data were reviewed in tabular form" \cite{tebe2020covid19}
+
+With this background, the project seemed timely, relevant and interesting.
+It offered the potential to be data rich and ideally suited to a team project. The team felt it was important that the project encouraged the use of existing skills as well as allow for the natural development of new and relevant techniques and processes while also being worthy of the scope of the project.
 
 \vspace{5mm} %5mm vertical space
 
-Data visualisation and analysis techniques have been the front and center in the efforts to communicate the statistics as well as the science around the COVID-19 virus. Interactive dashboards with several charts and graphs surfaced in different formats to offer concise ways to make sense of complex and overwhelming pandemic data sets. These techniques have become essential in informing the general public as well as healthcare providers, scientists and governments of the overall COVID-19 growth.
+Data visualisation and analysis techniques have been central in the efforts to communicate the statistics as well as the science around the COVID-19 virus. 
+“Data visualization discussions can surface key issues, jump start conversations, and set the stage for further inquiry”.\cite{fontichiaro2021using}
+
+Many websites with interactive dashboards with charts and graphs in different formats are an example of making sense of complex and overwhelming pandemic data sets. 
+“Visualization plays an important role in epidemic time series analysis and forecasting.”\cite{thorve2018epiviewer}
+
+
 
 \vspace{5mm} %5mm vertical space
 
-As a result, the team felt it would be beneficial as well as informative to create a web application that would take large COVID-19 data sets as well as other pandemic data and create a series of data visualisations from it. As well as compare past and present viruses to distinguish similarities along with differences. This would provide a clear view of COVID-19 and how similar viruses have spread.
+The team felt it would be beneficial as well as informative to create a web application that would take large COVID-19 data sets as well as other disease data and create a series of data visualisations from it. To compare past and present viruses to distinguish similarities along with differences. This would provide a clear view of COVID-19 and how similar viruses have spread.
 
-\vspace{5mm} %5mm vertical space
-
+\vspace{3mm} %5mm vertical space
 Once the project area had been decided on, each team member focused on a pandemic or epidemic, investigated where to source relevant information for the pandemic or epidemic, and investigated different technologies for displaying data in a visual manner.
 
+\textbf{Data Visualisation Research}
+\begin{itemize}
+    \item John Hopkins Dashboard
+            An interactive web-based dashboard to track COVID-19 in real time.
+    \item Gap Minder
+            A website that provided a new way of looking at data on a variety of subjects.
+    \item Epi Viewer
+            A research project, based on a web application that provides a framework for exploring, comparing, and organizing temporal data sets.
+    
+\end{itemize}
+
+During the initial research stage, the team were aware of the Spanish Flu as being the most recent pandemic. We thought that it would be interesting to include data for the Spanish flu and other epidemics like smallpox, SARs and MERs. 
+Covid-19 data is very easy to source and the main problem was narrowing down which sources to use.
+Conversely data for the other diseases mentioned above was not so easy to source. The main reason for this is the age of the data, the Spanish Flu pandemic took place over one hundred years ago. Smallpox was finally eradicated in 1980. 
+"Smallpox eradication was one of the greatest scientific and humanitarian achievements of the 20th century."\cite{Smallpox}
+The inclusion of the older disease data provides an interesting counterpoint to the current data rich modelled pandemic.
+
+Data visualisations can give a seemingly very precise picture but it is always reliant on the veracity of the data and may run the risk of all data being equal.
+
+"An exponential growth model is usually assumed to characterise the early phase of epidemics. But, this assumption can lead to failure to appropriately capture the profile of the epidemic growth, eventually giving rise to non realistic epidemic forecasts."\cite{tovissode2020use}
+
+
+
 \section{Project Objectives}
-As previously mentioned, the end goal of the project is to create a web application that would process different virus data and create various data visualisations to ensure a simple way for users to view large complex pandemic data. To ensure the end goal was reached, the team outlined objectives to be followed post development.
+The objective of the project is to create a web application that would process different virus data and create various data visualisations to ensure a simple way for users to view large complex pandemic data. 
+To ensure the objectives were reached, the team outlined the following:
 
 \begin{itemize}
   \item Investigate the field of interest and scope for the project.
-  \item Evaluate and research the appropriate frameworks and tools available for development.
-  \item Incorporate state of the art technologies, frameworks, databases and tools that will allow users to view, add, update, delete, post and retrieve data.
-  \item The web application will, at a minimum allow users to sign-up, login, view data visualizations as well as incorporate user interaction features, create unique user visuals and post user data to databases.
+  What is currently being done in the field, to understand some its challenges and potential development.
+  
+  \item Research and evaluate appropriate frameworks and tools available for development.
+  Shortlist technologies which have the potential to be fit for purpose.
+  
+  \item Incorporate state of the art technologies, frameworks, databases and tools that will allow users to view, add, update, post and retrieve data.
+  Evaluate which might be most suitable in practical terms for the scope of this project.
+  \item The web application will, allow users to sign-up, login, view data visualizations as well as incorporate user interaction features, create unique user visuals and post user data to databases.
 \end{itemize}
 
 \section{Metrics for Success and Failure}
-The outlining criteria for success and failure were important in ensuring the project remained on track throughout development and therefore allow the project to achieve the outlined goals in a timely and standard-driven manner. The defined metrics are of similar nature to that of the underlying objectives defined in \emph{Section .....} but explained at a higher level.
+Each of the outlined objectives above will be reviewed at the end of the project and evaluated in the conclusion section.
+
 
 \vspace{5mm} %5mm vertical space
 
@@ -66,22 +121,22 @@ A selection of metrics were outlined specifically for the development of the app
 \end{itemize}
 
 \section{Dissertation Summary}
-This section will contain a brief overview of the dissertation structure and will provide a short description of each chapters objectives.
+This section contains a brief overview of the dissertation structure and provides a short description of each chapter.
 
 \subsection{Methodology}
-In this chapter, the processes undertaken during the life cycle of the project regarding planning, testing and development will be outlined. Investigating development methods and methods employed during the research phase, their results and the effect they had on the direction of the project will be brought to the attention of the reader. Additional, the decisions, thought process and influential factors leading up to those processes and design implementations will also be described.
+In this chapter, the processes undertaken during the life cycle of the project in relation to planning, testing and development will be outlined. Investigating development methods and methods employed during the research phase, their results and the effect they had on the direction of the project will be discussed. The decisions, thought process and influential factors leading up to those processes and design implementations will also be described.
 
 \subsection{Technology Review}
-A technological review will encapsulate the technical aspect of the project. This includes the different technologies incorporated, their implementation, their roll, and why they were chosen. The benefits of the chosen technologies will be critically analysed and compared with similar alternatives.
+A technological review will outline the technical aspects of the project. This includes the different technologies why they were chosen, how they were incorporated and their implementation. The benefits of the chosen technologies will be evaluated and compared with similar alternatives.
 
 \subsection{System Design}
-A detailed explanation of the overall system architecture will be provided. Diagrams will be included to help illustrate and explain the inner workings of the application at a high level.
+A detailed explanation of the overall system architecture will be provided. Diagrams will be included to help illustrate and explain the workings of the application at a high level.
 
 \subsection{System Evaluation}
-An evaluation of the final applied project against the initial project objectives. The final result of the project will be critically analysed including an analysis of areas of software quality, improvements or changes to the overall project.
+An evaluation of the final applied project against the initial project objectives. The final result of the project will be evaluated including an analysis of areas of software quality, improvements or changes to the overall project.
 
 \subsection{Conclusion}
-To conclude, a brief summary of the context and objectives to remind the reader about the overall rationale and goals of the project. Key insights will be identified and reflected on. A final analysis will describe the teams overall experience and what the team learned while working on a project similar to one encountered in the software industry.
+To conclude, a summary of the context and objectives to remind the reader about the overall rationale and goals of the project. Key insights will be identified and reflected on. A final analysis will describe the teams overall experience and what the team learned while working on a project similar to one encountered in the software industry.
 
 
 \chapter{Methodology}
@@ -187,7 +242,7 @@ By taking the above headings into an account comparisons were drawn of both meth
     
     \bottomrule
   \end{tabular}
-  \caption{A table.}
+  \caption{Agile V's Waterfall comparison.}
   \label{table:mytable}
 \end{table}
 
@@ -214,9 +269,9 @@ Since the beginning of development for the applied project the team set up and a
 \vspace{5mm} %5mm vertical space
 
 
-It provides tools to allow developers to prioritize and visualize the main elements of the project in progress and also created a clear picture of what project tasks need to be started, completed and which tasks are currently in progress. 
+It provides tools to allow developers to prioritize and visualize the main elements of the project in progress and also created a clear picture of what project tasks need to be started, completed and which tasks are currently in progress.\cite{GitHubtasks}
 
-[GK 1]
+
 
 \vspace{50mm} %5mm vertical space
 
@@ -268,7 +323,7 @@ This chapter will outline the technology used and the reasoning for choosing a p
 \item JavaScript
 \item Python
 \item Visual Studio Code
-
+\item Live API Calls
 
 \end{itemize}
 
@@ -492,9 +547,9 @@ Whenever you update data in the real-time database, it stores the data in the cl
 Whenever a user loses thier connection, the database STK uses a local cache on the device to serve and store changes. This means that when the user comes back online, their local data is automatically synchronized. To keep our data secure, we used database security rules.
 The security rules are securely stored with the real-time database on our server.
 
-I wanted to use Mers and Sars data to display D3 graphs for our group project.
-I couldn’t find an API that gave me the data I wanted, but I was able to find all the data I needed in CSV format. 
-I parsed all that CSV data into JSON and used Firebases’ Command-line interface to upload all the data into the server.
+We wanted to use Mers and Sars data to display D3 graphs for our group project.
+We couldn’t find an API that gave me the data I wanted, but I was able to find all the data I needed in CSV format. 
+We parsed all that CSV data into JSON and used Firebases’ Command-line interface to upload all the data into the server.
 
 
 \section{Cloud Firestore}
@@ -703,11 +758,43 @@ Currently our application works fully locally. It is desirable for us to have th
 
 \subsection{Improvements}
 Improvements that can be made to the current system could include adding more features. Initially, we had an idea of having an online symptom checker by using a chatbot powered by artificial intelligence. The user could diagnose symptoms for signs of Covid-19.
-More interactive elements. For example the project could have Covid news tracker or worldwide headlines for Covid.
+More interactive elements. For example the project could have Covid-19 news tracker or worldwide headlines for Covid-19.
+
 
 
 \chapter{Conclusion}
-About three pages.
+\subsection{In relation to the objectives}
+We investigated the field of data visualisation and the scope for the project.
+We evaluated and researched the appropriate frameworks and tools available for development.
+We incorporated state of the art technologies, frameworks, databases and tools that allow users to view, add, update, delete, post and retrieve data.
+The web application, allows users to sign-up, login, view data visualizations as well as incorporate user interaction features, create unique user visuals and post user data to databases.
+
+\subsection{In relation to choice of technologies}
+We were happy with functionality and appearance of the application. 
+
+\subsection{Reflection on project implementation}
+
+
+\subsection{Reflection on functionality}
+
+
+\subsection{Reflection on working during lockdown}
+The team found working entirely remotely challenging, however we overcame that, working remotely is it's own discipline and one that is definitely worth learning. The team had weekly meetings with just the team and separate weekly meetings with our supervisor. It's possible that working remotely made us more aware of the need to be in frequent communication in terms of the project. Our choice of adopting the Agile methodology was ideally suited to remote collaborative teamwork.
+
+\subsection{Reflection on what we would do differently}
+If we had to do it again
+The benefit of hindsight is a wonderful thing, there are many things we would probably do differently.
+
+\subsection{A note on trustworthiness of data}
+Selecting the topic of data visualisation was partly inspired by an interest in how data visualisation can impart a lot of information without the need for reading extensive data and inspired by the Covid-19 pandemic and lockdown. It should be noted that just because data is presented in a visually appealing manner does not a fact make. It does in fact make it harder to ask questions of the data, to separate the data and interrogate its provenance. When data from different sources are synthesised the resulting evidence is disconnected from its data collection protocols. This can lead to reliability issues, data is only as useful as it is reliable. 
+
+
+
+
+
+
+
+
 
 \begin{itemize}
 \item Briefly summarise your context and objectives (a few lines).
@@ -741,4 +828,4 @@ About three pages.
 [SN 24] Selenium; \url{https://en.wikipedia.org/wiki/Selenium_(software)}
 [SN 25] firebase; \url{https://codeburst.io/firebase-spend-more-time-developing-the-features-that-actually-matter-814f57a499af}
 
-[GK 1] GitHub tasks; \url{https://github.com/features/project-management/}
+[GK 1] 
