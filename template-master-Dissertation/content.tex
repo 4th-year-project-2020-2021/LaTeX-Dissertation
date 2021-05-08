@@ -13,32 +13,92 @@ This project was developed as part of a fifteen credit module by Grace Keane, Ji
 This chapter will serve as a prelude to the project. The context, objectives and metrics for success and failure will be defined, followed by a thorough summary of the project domain and an introduction into each chapter of the dissertation and its relevance.
 
 \section{Context}
-During the decision making process the team decided that the project must be relevant as well as interesting. The project must encourage the use of existing skills as well as allow for the natural development of new and relevant techniques and processes while also being worthy of scope.
+Why choose data visualisation as a subject for our Applied Project and Minor Dissertation? Towards the end of our third year in college, Ireland was shutdown and effectively put into a lockdown. All colleges, schools and areas where large amounts of people gather were closed or off limits. The reason for the lockdown was the outbreak of a disease which became known as Covid-19, a global pandemic. The first pandemic that the majority of the world's population will have ever experienced. The last global pandemic was the Spanish flu, which lasted from approximately 1918 to 1920, this pandemic occurred in three waves, though not simultaneously around the globe.\cite{Spanishflu}\\
+
+\vspace{1mm}
+
+The fact that our on campus learning was curtailed due to the Covid-19 outbreak has had an impact on our learning. Being software students, it was fascinating to see how much real time information was available coming from all directions. Sites like John Hopkins Dashboard tracked Covid-19's progress round the world on a daily basis. Starting off with what looked like small numbers at first, the amount of cases quickly exploded in countries like Italy and Iran, an example of exponential disease growth. If measures we not taken to halt the spread of the virus the rest of the world would eventually experience exponential growth of cases.\\
+
+\vspace{1mm}
+\section{Why Visualisation matters}
+
+There are two useful functions for data visualisation.\\
+a) The dissemination of public health information, with purpose of giving the clearest information possible to the general public.\\
+b) The effective modelling, prediction and forecasting of disease trends for scientists and policy makers.
+
+\vspace{5mm}
+
+Exponential growth is a mathematical concept that is not properly understood by the majority of people.
+"People mistakenly perceive the coronavirus to grow in a linear manner, underestimating its actual potential for exponential growth."\cite{lammers2020correcting}\\
+
+\vspace{2mm}
+
+“The complex data are extremely challenging for our cognitive abilities. Visual Analytics solutions may support knowledge discovery and problem solving if the needs of the different stakeholders, such as epidemiologists and environmental health specialists, are adequately addressed.”\cite{preim2020survey}
+
+\vspace{5mm}
+
+
+It struck the team that the visual representation of data is a good explanatory tool to show how fast exponential growth can happen. As well as disseminating public health information to the general public and allows experts to perform predictions and modelling based on current trends. This information can help policy makers make the best decisions possible given current conditions. "It can help researchers and policy makers to identify trends that could be overlooked if the data were reviewed in tabular form". \cite{tebe2020covid19}
+
+\vspace{5mm}
+
+
+With this background, the project seemed timely, relevant and interesting.
+It offered the potential to be data rich and ideally suited to a team project. The team felt it was important that the project encouraged the use of existing skills as well as allow for the natural development of new and relevant techniques and processes while also being worthy of the scope of the project.
 
 \vspace{5mm} %5mm vertical space
 
-Data visualisation and analysis techniques have been the front and center in the efforts to communicate the statistics as well as the science around the COVID-19 virus. Interactive dashboards with several charts and graphs surfaced in different formats to offer concise ways to make sense of complex and overwhelming pandemic data sets. These techniques have become essential in informing the general public as well as healthcare providers, scientists and governments of the overall COVID-19 growth.
+Data visualisation and analysis techniques have been central in the efforts to communicate the statistics as well as the science around the COVID-19 virus. 
+“Data visualization discussions can surface key issues, jump start conversations, and set the stage for further inquiry” \cite{fontichiaro2021using}. Many websites have Incorporated interactive dashboards as well as charts and graphs to to visualize complex and overwhelming pandemic data sets. 
+“Visualization plays an important role in epidemic time series analysis and forecasting.”\cite{thorve2018epiviewer}
 
 \vspace{5mm} %5mm vertical space
 
-As a result, the team felt it would be beneficial as well as informative to create a web application that would take large COVID-19 data sets as well as other pandemic data and create a series of data visualisations from it. As well as compare past and present viruses to distinguish similarities along with differences. This would provide a clear view of COVID-19 and how similar viruses have spread.
+The team felt it would be beneficial as well as informative to create a web application that would take large COVID-19 data sets as well as other disease data and create a series of data visualisations from it. To compare past and present viruses and distinguish similarities along with differences. This would provide a clear view of COVID-19 and how similar viruses have spread.
 
-\vspace{5mm} %5mm vertical space
-
+\vspace{3mm} %5mm vertical space
 Once the project area had been decided on, each team member focused on a pandemic or epidemic, investigated where to source relevant information for the pandemic or epidemic, and investigated different technologies for displaying data in a visual manner.
 
+\vspace{5mm}
+
+\textbf{Data Visualisation Research}
+\begin{itemize}
+    \item John Hopkins Dashboard
+            An interactive web-based dashboard to track COVID-19 in real time.
+    \item Gap Minder
+            A website that provided a new way of looking at data on a variety of subjects.
+    \item Epi Viewer
+            A research project, based on a web application that provides a framework for exploring, comparing, and organizing temporal data sets.
+    
+\end{itemize}
+
+During the initial research stage, the team were aware of the Spanish Flu as being the most recent pandemic. We thought that it would be interesting to include data for the Spanish flu and other epidemics like smallpox, SARs and MERs. Covid-19 data is very easy to source and the main problem was narrowing down which sources to use. Conversely data for the other diseases mentioned above was not so easy to source. The main reason for this is the age of the data, the Spanish Flu pandemic took place over one hundred years ago. Smallpox was finally eradicated in 1980. 
+"Smallpox eradication was one of the greatest scientific and humanitarian achievements of the 20th century."\cite{Smallpox} The inclusion of the older disease data provides an interesting counterpoint to the current data rich modelled pandemic.
+
+\vspace{2mm}
+
+Data visualisations can give a seemingly very precise picture but it is always reliant on the veracity of the data and may run the risk of all data being equal. "An exponential growth model is usually assumed to characterise the early phase of epidemics. But, this assumption can lead to failure to appropriately capture the profile of the epidemic growth, eventually giving rise to non realistic epidemic forecasts"\cite{tovissode2020use}.
+
+
+
 \section{Project Objectives}
-As previously mentioned, the end goal of the project is to create a web application that would process different virus data and create various data visualisations to ensure a simple way for users to view large complex pandemic data. To ensure the end goal was reached, the team outlined objectives to be followed post development.
+The objective of the project is to create a web application that would process different virus data and create various data visualisations to ensure a simple way for users to view large complex pandemic data. 
+To ensure the objectives were reached, the team outlined the following:
 
 \begin{itemize}
   \item Investigate the field of interest and scope for the project.
-  \item Evaluate and research the appropriate frameworks and tools available for development.
-  \item Incorporate state of the art technologies, frameworks, databases and tools that will allow users to view, add, update, delete, post and retrieve data.
-  \item The web application will, at a minimum allow users to sign-up, login, view data visualizations as well as incorporate user interaction features, create unique user visuals and post user data to databases.
+  What is currently being done in the field, to understand some its challenges and potential development.
+  
+  \item Research and evaluate appropriate frameworks and tools available for development.
+  Shortlist technologies which have the potential to be fit for purpose.
+  
+  \item Incorporate state of the art technologies, frameworks, databases and tools that will allow users to view, add, update, post and retrieve data.
+  Evaluate which might be most suitable in practical terms for the scope of this project.
+  \item The web application will, allow users to sign-up, login, view data visualizations as well as incorporate user interaction features, create unique user visuals and post user data to databases.
 \end{itemize}
 
 \section{Metrics for Success and Failure}
-The outlining criteria for success and failure were important in ensuring the project remained on track throughout development and therefore allow the project to achieve the outlined goals in a timely and standard-driven manner. The defined metrics are of similar nature to that of the underlying objectives defined in \emph{Section .....} but explained at a higher level.
+The outlining criteria for success and failure was essential in ensuring the applied project remained on track.  Each project outlined objectives listed in \emph{Section 1.3} will be reviewed at the end of the project and evaluated in the conclusion section. The initial success and failure objectives defined are outlined in \emph{Section 1.4.1} and \emph{Section 1.4.2}
 
 \vspace{5mm} %5mm vertical space
 
@@ -47,7 +107,7 @@ A selection of metrics were outlined specifically for the dissertation, they are
 
 \begin{itemize}
 
-    \item \emph{The final dissertation should be easily understood, allowing readers without knowledge or familiarity of the subject area to form a suitable understanding of the concept and areas discussed.} In order to accurately measure this metric, input was received from family and fellow students, who would kindly read newly integrated sections and provide useful feedback.
+    \item \emph{The final dissertation should be easily understood, allowing readers without knowledge or familiarity of the subject area to form a suitable understanding of the concept and areas discussed.} In order to accurately measure this metric, input was received from family who would kindly read newly integrated sections and provide useful feedback.
 
     \item \emph{The  dissertation should be in order of 10,000 - 15,000 words, excluding appendices as well as approximately 35 pages (excluding diagrams, abstract, TOCs, references, appendices etc.)}
 
@@ -66,46 +126,48 @@ A selection of metrics were outlined specifically for the development of the app
 \end{itemize}
 
 \section{Dissertation Summary}
-This section will contain a brief overview of the dissertation structure and will provide a short description of each chapters objectives.
+This section contains a brief overview of the dissertation structure and provides a short description of each chapter.
 
 \subsection{Methodology}
-In this chapter, the processes undertaken during the life cycle of the project regarding planning, testing and development will be outlined. Investigating development methods and methods employed during the research phase, their results and the effect they had on the direction of the project will be brought to the attention of the reader. Additional, the decisions, thought process and influential factors leading up to those processes and design implementations will also be described.
+In this chapter, the processes undertaken during the life cycle of the project in relation to planning, testing and development will be outlined. Investigating development methods and methods employed during the research phase, their results and the effect they had on the direction of the project will be discussed. The decisions, thought process and influential factors leading up to those processes and design implementations will also be described.
 
 \subsection{Technology Review}
-A technological review will encapsulate the technical aspect of the project. This includes the different technologies incorporated, their implementation, their roll, and why they were chosen. The benefits of the chosen technologies will be critically analysed and compared with similar alternatives.
+A technological review will outline the technical aspects of the project. This includes the different technologies why they were chosen, how they were incorporated and their implementation. The benefits of the chosen technologies will be evaluated and compared with similar alternatives.
 
 \subsection{System Design}
-A detailed explanation of the overall system architecture will be provided. Diagrams will be included to help illustrate and explain the inner workings of the application at a high level.
+A detailed explanation of the overall system architecture will be provided. Diagrams will be included to help illustrate and explain the workings of the application at a high level.
 
 \subsection{System Evaluation}
-An evaluation of the final applied project against the initial project objectives. The final result of the project will be critically analysed including an analysis of areas of software quality, improvements or changes to the overall project.
+An evaluation of the final applied project against the initial project objectives. The final result of the project will be evaluated including an analysis of areas of software quality, improvements or changes to the overall project.
 
 \subsection{Conclusion}
-To conclude, a brief summary of the context and objectives to remind the reader about the overall rationale and goals of the project. Key insights will be identified and reflected on. A final analysis will describe the teams overall experience and what the team learned while working on a project similar to one encountered in the software industry.
-
+To conclude, a summary of the context and objectives to remind the reader about the overall rationale and goals of the project. Key insights will be identified and reflected on. A final analysis will describe the teams overall experience and what the team learned while working on a project similar to one encountered in the software industry.
 
 \chapter{Methodology}
-The first project meeting took place in the final week of September 2020. This meeting consisted of analysing the applied project requirements that had been defined and outlined. The team agreed to choose a topic that would be informative yet beneficial to the end user. It was concluded that the final idea and architecture of the solution should be finalised as soon as possible to allow for necessary research and planned development.
+\section{Project Management and Research}
+This chapter will explore the pre-development process, the approach the team took with development and testing, how the team dealt with various problems faced, and the influence of regular supervisor meetings along with a conclusion based on what impact pre-development research had on the overall project direction.
 
 \vspace{5mm} %5mm vertical space
 
-This chapter will explore the pre-development process, the approach the team took with development and testing, how the team dealt with various problems faced, and the influence of regular supervisor meetings along with a conclusion based on what impact pre-development research had on the overall project direction.
+The first project meeting took place in the final week of September 2020. This meeting consisted of analysing the applied project requirements that had been defined and outlined. The team agreed to choose a topic that would be informative yet beneficial to the end user. It was concluded that the idea and architecture of the solution should be finalised as soon as possible to allow for necessary research and planned development.
 
-\section{Technological Brainstorming and Initial Supervisor Meeting}
+
+\subsection{Brainstorming and Initial Supervisor Meeting}
 Before development began and after the initial project topic was chosen each team member researched various technologies and concepts that could be potentially incorporated into the project. Soon after a brainstorming meeting was conducted to critically analyse each technology researched and the team decided whether each would be of good fit.
 
 \vspace{5mm} %5mm vertical space
 
 The team met prior to the initial supervisor meeting to produce effective ideas and questions to be asked relating to the overall architecture of the solution and the ultimate goals and objectives, these included:
+\vspace{5mm} %5mm vertical space
 
 \begin{itemize}
 
 
-    \item \textbf{What technologies would be of best fit for the project?}
+    \item \textbf{What technologies would be of best fit for the project?} \\
 The team investigated many possible technologies for the project. Chapter three will fully outline our choices and reasoning for selecting these technologies.
 
-    \item \textbf{What benefits would certain methodologies posses compared to others?}
-The advantages and disadvantages of the methodologies, such as Agile and Waterfall, were considered by the team and are outlined in full in Chapter 2.
+    \item \textbf{What benefits would certain methodologies posses compared to others?}\\
+The advantages and disadvantages of the methodologies, such as Agile and Waterfall, were considered by the team and are outlined in full in this chapter.
 \end{itemize}
 
 During the initial supervisor meeting the project idea, potential research, development technologies, development methodology and collaboration approaches were discussed. The team were advised to spend the next few weeks to consider and finalise the overall nature of how the applied project will be designed and implemented.
@@ -129,32 +191,37 @@ After the supervisor meeting the team decided to take this advice on board. Each
 \end{itemize}
 
 \section{Methodology Consideration}
-There where numerous possible methodologies to consider. After discussions with team members, the team agreed to critically analyse and compare \textbf{Waterfall} and \textbf{Agile} to determine which methodology would be of best suit to the applied project. These methodologies are amongst the most popular methodologies used by software development teams.
-
-
-\vspace{70mm} %5mm vertical space
+There where numerous possible methodologies to consider. After discussions with team members, the team agreed to critically analyse and compare \textbf{Waterfall} and \textbf{Agile} to determine which methodology would be of best suited to the applied project. These methodologies are amongst the most popular used by software development teams worldwide.
+\vspace{5mm} %5mm vertical space
 
 
 \section{Determining Development Methodology}
-Following the decision of Agile and Waterfall as an approach to software development, the team began to research the advantages and disadvantages of both, along with deciding which methodology would be best to take when considering the scope, project goals and time frame. A critical analysis and overview of both methodologies were made and a conclusion based on the practical analysis of each in relation to the project was undertaken.
+Following the decision of Agile and Waterfall as an approach to software development, the team began to research the advantages and disadvantages of both, along with deciding which methodology would be best to adapt when considering the scope, project goals and time frame. A critical analysis and overview of both methodologies were made and a conclusion based on the practical analysis of each in relation to the project was undertaken.
 
 \section{Waterfall}
-The Waterfall model is composed of a series of steps, illustrated in \emph{Figure....}. These steps are used to break down a project into linear sequential phases to ease the development process.  \cite{petersen2009waterfall}. Waterfall allows progress to be easily measured, the complete scope of the project is known in advance, which can be preferred based on the type of project and software team. The Waterfall model tends to be among the less flexible approaches, the output of each stage completed is the input for the next and the overall progress follows a fixed downwards path like a waterfall.
-
-\begin{center}
-      \includegraphics[scale=0.46]{img/Waterfall.png}
-\end{center}
-\label{fig:x cubed graph}
-
+The Waterfall model is composed of a series of steps, illustrated in \emph{Figure 2.1}. These steps are used to break down a project into linear sequential phases to ease the development process.  \cite{petersen2009waterfall}. Waterfall allows progress to be easily measured, the complete scope of the project is known in advance, which can be preferred based on the type of project and software team. The Waterfall model tends to be among the less flexible approaches, the output of each stage completed is the input for the next and the overall progress follows a fixed downwards path like a waterfall.
+\begin{figure}[ht]
+    \centering
+    \includegraphics[scale=0.46]{img/Waterfall.png}
+    \caption{Waterfall Methodology}
+    \label{fig:my_label1}
+\end{figure}
 The waterfall model is still a widely used method for working on software projects today. It is arguably the most well known development model, which is likely attributed to how long the model has been around, not to mention the overall simplicity of the model. Each phase is of a waterfall project is completed sequentially and testing is done after tasks are completed. \cite{balaji2012waterfall}.
-
 
 \section{Agile}
 Agile methodologies are a group of software development methods that are based on interactive and incremental development \cite{kumar2012impact}. The term agile stands for 'moving quickly'. It is characterised by an approach that allows rapid and continuous delivery of small and useful software. It takes the view  that production teams should start with simple and predictable approximations to the final requirement and then continue to increment the detail of these requirements throughout the life of the project. Agile methodology has an adaptive team which is able to respond to changing requirements as well as the ability to solve problems even late in the development cycle. \cite{balaji2012waterfall}.
-\begin{center}
-      \includegraphics[scale=0.8]{img/Agile.png}
-\end{center}
-The popularity of Agile development methodologies amongst the software industry has increased drastically, with almost 85.4\% of international surveyed software developers using Agile methodologies in their work. \cite{agileStats} Research has also shown that Agile projects are 28\% more successful than traditional projects. The most important principle of the Agile methodology is customer satisfaction by giving rapid and continuous delivery of small and useful software.
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[scale=0.8]{img/Agile.png}
+    \caption{Agile Methodology}
+    \label{fig:my_label1}
+\end{figure}
+
+The popularity of Agile development methodologies amongst the software industry has increased drastically, with almost 85.4\% of international surveyed software developers using Agile methodologies in their work. Research has also shown that Agile projects are 28\% more successful than traditional projects. The most important principle of the Agile methodology is customer satisfaction by giving rapid and continuous delivery of small and useful software.
+
+
+https://hygger.io/blog/why-agile-is-so-popular-in-project-management/#:~:text=Agile%20projects%20are%2028%25%20more,use%20Agile%20in%20their%20work.&text=27.4%25%20of%20manufacturing%20companies%20rely,on%20the%20combination%20of%20methodologies.
 
 \section{Comparison between Agile and Waterfall}
 Following team meetings, research and analysis, both Agile and Waterfall were critically analysed under the following headings:
@@ -173,6 +240,8 @@ Following team meetings, research and analysis, both Agile and Waterfall were cr
 
 By taking the above headings into an account comparisons were drawn of both methodologies.
 
+\vspace{2mm}
+
 \begin{table}[ht]
   \centering
   \begin{tabular}{x{5cm}p{5cm}}
@@ -187,15 +256,14 @@ By taking the above headings into an account comparisons were drawn of both meth
     
     \bottomrule
   \end{tabular}
-  \caption{A table.}
+  \caption{Agile V's Waterfall comparison.}
   \label{table:mytable}
 \end{table}
 
 
-Following various comparisons between the Agile and Waterfall, it became clear to the team that an Agile approach would best suit the development of the outlined applied project. This approach would aid the development process in numerous ways, these include:
+Following various comparisons between Agile and Waterfall, it became clear to the team that an Agile approach would best suit the development of the outlined applied project. This approach would aid the development process in numerous ways, these include:
 
-\vspace{70mm} %5mm vertical space
-
+\vspace{5mm}
 1. \textbf{Errors can be detected and solved quickly} - The team thought it would be beneficial to be able to detect and solve problems quickly, especially when the team did not have much experience with using GitHub collaboratively together as a team.
 
 2. \textbf{The ability to develop small but functional software via releases} - Based on feedback from our supervisor the priorities of the project could be subject to change. Small incremental changes means there would be flexibility and versatility throughout the development stage.
@@ -214,18 +282,21 @@ Since the beginning of development for the applied project the team set up and a
 \vspace{5mm} %5mm vertical space
 
 
-It provides tools to allow developers to prioritize and visualize the main elements of the project in progress and also created a clear picture of what project tasks need to be started, completed and which tasks are currently in progress. 
+It provides tools to allow developers to prioritize and visualize the main elements of the project in progress and also created a clear picture of what project tasks need to be started, completed and which tasks are currently in progress.\cite{GitHubtasks}
 
-[GK 1]
-
-\vspace{50mm} %5mm vertical space
+\vspace{5mm} %5mm vertical space
 
 The ability to track project progression on the same platform where the project is being collaborated on is a huge benefit as well as more efficient than using an external project management tracker. 
 
-\begin{center}
-      \includegraphics[scale=0.50]{img/GitHubToDo.PNG}
-\end{center}
-\label{fig:x Github Tasks}
+\vspace{5mm} %5mm vertical space
+
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[scale=0.50]{img/GitHubToDo.PNG}
+    \caption{GitHub Tasks}
+    \label{fig:my_label1}
+\end{figure}
 
 
 The figure above shows the GitHub task sheet used during development of the applied project. It consists of five main columns:
@@ -243,9 +314,10 @@ Completed tasks relating to the front end development were moved from in progres
 Completed test tasks are moved here.
 \end{itemize}
 
+\vspace{50mm} %5mm vertical space
 
 \subsection{Scrum}
-As well as using GitHub Tasks to manage project management, the Scrum methodology was incorporated and employed. The Scrum methodology is designed for teams to break down work into goals that can be completed in a specific time frame called sprints. Sprints are generally one week in length. At the end of each week, a supervisor meeting would be held where the team would discuss their progress with the supervisor.
+As well as using GitHub Tasks to manage project management, the Scrum methodology was incorporated and employed. This development methodology assumes that the project or systems progress is an unpredictable process that can be described as an overall progression \cite{schwaber1997scrum}. The Scrum methodology is designed for teams to break down work into goals that can be completed in a specific time frame called sprints. Sprints are generally one week in length. At the end of each week, a supervisor meeting would be held where the team would discuss their progress with the supervisor.
 
 \vspace{5mm} %5mm vertical space
 
@@ -268,7 +340,7 @@ This chapter will outline the technology used and the reasoning for choosing a p
 \item JavaScript
 \item Python
 \item Visual Studio Code
-
+\item Live API Calls
 
 \end{itemize}
 
@@ -427,6 +499,14 @@ The team agrees, VS code is extremely easy to use, is much faster than other IDE
 
 
 \section{FireBase}
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[scale=0.8]{img/firebase2.PNG}
+    \caption{hosted in the cloud}
+    \label{fig:my_label}
+\end{figure}
+
 Firebase is a Backend-as-a-Service that was founded in 2011 that provided developers an API that enables integration of online chat functionality into their websites. 
 
 In 2014, Google acquired Firebase and has since built it into a full fledged mobile and web development platform with over 19 different products and services with more than 1.5 million developers worldwide.
@@ -437,52 +517,46 @@ JSON is an acronym for JavaScript Object Notation and it defines a syntax used t
 
 JSON objects typically consist of a key/value pair, where the key uniquely identifies the object within the database and the value represents the data that is being stored. Multiple JSON objects are structured in the form of a JSON tree.
 
-The Firebase SDK supports programming in C++, Java, JavaScript, JavaScript/Node.js, Objective-C, and Swift. Angular, Backbone, Ember and React are supported through bindings to the database.
-
-\begin{figure}
-    \centering
-    \includegraphics[scale=0.7]{img/firebase2.PNG}
-    \caption{hosted in the cloud}
-    \label{fig:my_label4}
-\end{figure}
+The Firebase SDK supports programming in C++, Java, JavaScript, JavaScript/Node.js, Objective-C, and Swift. Angular, Backbone, Ember and React are supported through bindings to the database. [JK 10]
 
 
 \subsection{User Authentication}
 
-
-\begin{figure}
+\begin{figure}[ht]
     \centering
     \includegraphics[scale=0.5]{img/auth.PNG}
     \caption{User data to the Database}
-    \label{fig:my_label4}
+    \label{fig:my_labe2}
 \end{figure}
 
 Firebase Authentication provides backend services, easy-to-use SDKs, and ready-made UI libraries to authenticate users to our app.
 
-It supports authentication using email and password accounts, phone auth, Google, Facebook, Twitter, and GitHub login, and more. The Firebase Authentication (SDK) can be used to manually integrate one or more sign-in methods into an app.
+It supports authentication using email and password accounts, phone auth, Google, Facebook, Twitter, and GitHub login, and more. The Firebase Authentication (SDK) can be used to manually integrate one or more sign-in methods into an app.[JK 1]
+
+\vspace{5mm}
 
 To sign a user into our app, we first get authentication credentials from the user. 
 These credentials can be the user's email address and password, or an OAuth token from a federated identity provider. Then, we pass these credentials to the Firebase Authentication SDK. 
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[scale=0.55]{img/login.PNG}
+    \caption{user login and identity}
+    \label{fig:my_labe3}
+\end{figure}
 
 Our backend services will then verify those credentials and return a response to the client.
 After a successful sign in, it will allow the navigation of sensitive routes.
 Authenticated user will access routes that previously locked.
 
-\begin{figure}
-    \centering
-    \includegraphics[scale=0.55]{img/login.PNG}
-    \caption{user login and identity}
-    \label{fig:my_label4}
-\end{figure}
-
 
 \subsection{Realtime database}
 
-\begin{figure}
+\begin{figure}[ht]
     \centering
     \includegraphics[scale=0.4]{img/Firebasedb.PNG}
     \caption{Storing and managing our data}
-    \label{fig:my_label4}
+    \label{fig:my_labe4}
 \end{figure}
 
 
@@ -490,7 +564,9 @@ The Firebase Realtime Database is a cloud-hosted NoSQL database.
 Data is synced across all clients in real-time and remains available even when an app goes offline.
 Whenever you update data in the real-time database, it stores the data in the cloud and simultaneously notifies all interested devices in milliseconds. The real-time database is also optimized for offline use.
 Whenever a user loses thier connection, the database STK uses a local cache on the device to serve and store changes. This means that when the user comes back online, their local data is automatically synchronized. To keep our data secure, we used database security rules.
-The security rules are securely stored with the real-time database on our server.
+The security rules are securely stored with the real-time database on our server. [JK 2]
+
+\vspace{5mm}
 
 I wanted to use Mers and Sars data to display D3 graphs for our group project.
 I couldn’t find an API that gave me the data I wanted, but I was able to find all the data I needed in CSV format. 
@@ -500,51 +576,50 @@ I parsed all that CSV data into JSON and used Firebases’ Command-line interfac
 \section{Cloud Firestore}
 Cloud Firestore is Firebase's fully managed cloud-native NoSQL document database that is fast and serverless. It's a new and improved version of the Real-Time Database, and its capabilities include real-time updates, offline synchronization, scalability, and multi-region deployment. Unlike a SQL database, there are no tables or rows. Instead, you store data in documents, which are organized into collections. Each document contains a set of key-value pairs.
 Cloud Firestore is optimized for storing large collections of small documents.
-All documents must be stored in collections. Documents can contain subcollections and nested objects, both of which can include primitive fields like strings or complex objects like lists.
+All documents must be stored in collections. Documents can contain subcollections and nested objects, both of which can include primitive fields like strings or complex objects like lists. [JK 3]
 
+\vspace{6mm}
 
 We used Cloud Firestore for our Message Board.
-
 User identity is an important security concept. Different users have different data, and sometimes they have different capabilities.
 
 For example each message is associated with the user that created it. Users may also be able to delete their own messages, but not messages posted by other users.
 
-The SDK handles all the state management and data syncing in between the client and server. I set up a collection of messages and then for each of these messages create a sub collection of messages.
-
-If we look at the actual database we can see that each message has an owner and then each individual message is an object.
-
-\begin{figure}
-    \centering
-    \includegraphics[scale=0.75]{img/message.PNG}
-    \caption{How we manage messages}
-    \label{fig:my_label4}
-\end{figure}
-
-\begin{figure}
+\begin{figure}[ht]
     \centering
     \includegraphics[scale=0.6]{img/FirestoreMessage.PNG}
     \caption{Storing and managing messages}
-    \label{fig:my_label4}
+    \label{fig:my_labe6}
 \end{figure}
+
+The SDK handles all the state management and data syncing in between the client and server. I set up a collection of messages and then for each of these messages create a sub collection of messages.
+
+\vspace{5mm}
+
+If we look at the actual database we can see that each message has an owner and then each individual message is an object.
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[scale=0.95]{img/message.PNG}
+    \caption{How to add message to the message collection}
+    \label{fig:my_labe5}
+\end{figure}
+
+
 
 It contains the user ID, a created timestamp and the message content.
 When a user is logged in and they created a new message it will create this document with their user ID as the owner ID.
 
 \section{D3}
 
-
-\begin{figure}
-    \centering
-    \includegraphics[scale=0.6]{img/D3Ref.PNG}
-    \caption{How to access D3}
-    \label{fig:my_label4}
-\end{figure}
-
 D3.js (Data-Driven-Documents) is an open-source JavaScript library that lets you create dynamic data visualizations in web browsers using SVC, HTML 5, and CSS.
 Most data visualization tools require Python, D3.js visualizations are created entirely using JavaScript.
 
+\vspace{5mm}
+
 While most charting libraries (such as Chart.js and Highcharts) provide ready made charts D3 consists of a large set of building blocks from which custom charts or maps can be constructed.
 
+\vspace{2mm}
 D3’s approach is much lower level than other charting libraries. Creating a bar chart with Chart.js is just a few lines of code.
 
 Creating the same chart with D3 you need to:
@@ -568,10 +643,17 @@ It takes two simple steps:
 \item \textbf{creating a ref in constructor()}
 \item \textbf{connecting [div] to the ref}
 
-\end{itemize}
+\end{itemize} [JK 4]
 
 Our ChartWrapper.js will look like this :
 
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[scale=0.7]{img/D3Ref.PNG}
+    \caption{How to access D3}
+    \label{fig:my_label4}
+\end{figure}
 
 \chapter{System Design}
 \begin{center}
@@ -655,39 +737,41 @@ Some of the testing that we conducted included Unit Testing and System Testing.
 Unit Testing is a type of software testing where individual units or components of a software are tested. 
 The purpose is to validate that each unit of the software code performs as expected.
 
-A unit may be an individual function, method, procedure, module, or object.
+A unit may be an individual function, method, procedure, module, or object. [JK 5]
 The reason that it is done this way is to verify that each unit of our application is working correctly.
 
 
 \subsubsection{jest}
 Jest is a JavaScript unit testing framework, used by Facebook to test services and React applications.
-Jest also provides Snapshot testing, the ability to create a rendered ‘snapshot’ of a component and compare it to a previously saved ‘snapshot’. The test will fail if the two do not match.
+Jest also provides Snapshot testing, the ability to create a rendered ‘snapshot’ of a component and compare it to a previously saved ‘snapshot’. The test will fail if the two do not match. [JK 7]
+
+\vspace{5mm}
 
 Jest was used to test both Firebase and Firestore functions.
 Every time I used Firebase, I ran into the problem of how to test Firebase's database and authentication. Since I am using Jest as my default testing environment, I figured everything I needed already comes with Jest.
 
-\begin{figure}
+\begin{figure}[ht]
     \centering
-    \includegraphics[scale=0.5]{img/jest.PNG}
+    \includegraphics[scale=0.6]{img/jest.PNG}
     \caption{Testing with Jest}
     \label{fig:my_label4}
 \end{figure}
 
 \subsubsection{Firebase Emulators}
-The Firebase Local Emulator Suite consists of individual service emulators built to accurately mimic the behavior of Firebase services. This means we can connect our app directly to these emulators to perform integration testing or QA without touching production data.
+The Firebase Local Emulator Suite consists of individual service emulators built to accurately mimic the behavior of Firebase services. This means we can connect our app directly to these emulators to perform integration testing or QA without touching production data.[JK 6]
 
 The Firebase Emulators make it easier to fully validate the app's behavior and verify our Firebase Security Rules configurations.
 We used the Firebase Emulators to run and automate unit tests in a local environment. 
 
-\begin{figure}
+\begin{figure}[ht]
     \centering
-    \includegraphics[scale=0.6]{img/FirebaseEmulator.PNG}
+    \includegraphics[scale=0.7]{img/FirebaseEmulator.PNG}
     \caption{Testing with Firebase Emulator}
     \label{fig:my_label4}
 \end{figure}
 
-\subsubsection{PyTest}
-PyTest is a testing framework that allows users to write test codes using Python programming language. It helps you to write simple and scalable test cases for databases, APIs, or UI. PyTest is mainly used for writing tests for APIs. It helps to write tests from simple unit tests to complex functional tests.
+\subsubsection{Postman}
+Postman is an application for testing APIs, by sending request to the web server and getting the response back. It allows users to set up all the headers and cookies the API expects, and checks the response. [JK 8]
 
 \subsection{System Testing}
 
@@ -703,11 +787,43 @@ Currently our application works fully locally. It is desirable for us to have th
 
 \subsection{Improvements}
 Improvements that can be made to the current system could include adding more features. Initially, we had an idea of having an online symptom checker by using a chatbot powered by artificial intelligence. The user could diagnose symptoms for signs of Covid-19.
-More interactive elements. For example the project could have Covid news tracker or worldwide headlines for Covid.
+More interactive elements. For example the project could have Covid-19 news tracker or worldwide headlines for Covid-19.
+
 
 
 \chapter{Conclusion}
-About three pages.
+\subsection{In relation to the objectives}
+We investigated the field of data visualisation and the scope for the project.
+We evaluated and researched the appropriate frameworks and tools available for development.
+We incorporated state of the art technologies, frameworks, databases and tools that allow users to view, add, update, delete, post and retrieve data.
+The web application, allows users to sign-up, login, view data visualizations as well as incorporate user interaction features, create unique user visuals and post user data to databases.
+
+\subsection{In relation to choice of technologies}
+We were happy with functionality and appearance of the application. 
+
+\subsection{Reflection on project implementation}
+
+
+\subsection{Reflection on functionality}
+
+
+\subsection{Reflection on working during lockdown}
+The team found working entirely remotely challenging, however we overcame that, working remotely is it's own discipline and one that is definitely worth learning. The team had weekly meetings with just the team and separate weekly meetings with our supervisor. It's possible that working remotely made us more aware of the need to be in frequent communication in terms of the project. Our choice of adopting the Agile methodology was ideally suited to remote collaborative teamwork.
+
+\subsection{Reflection on what we would do differently}
+If we had to do it again
+The benefit of hindsight is a wonderful thing, there are many things we would probably do differently.
+
+\subsection{A note on trustworthiness of data}
+Selecting the topic of data visualisation was partly inspired by an interest in how data visualisation can impart a lot of information without the need for reading extensive data and inspired by the Covid-19 pandemic and lockdown. It should be noted that just because data is presented in a visually appealing manner does not a fact make. It does in fact make it harder to ask questions of the data, to separate the data and interrogate its provenance. When data from different sources are synthesised the resulting evidence is disconnected from its data collection protocols. This can lead to reliability issues, data is only as useful as it is reliable. 
+
+
+
+
+
+
+
+
 
 \begin{itemize}
 \item Briefly summarise your context and objectives (a few lines).
@@ -730,15 +846,18 @@ About three pages.
 [SN 12] Blueprint; \url{https://realpython.com/flask-blueprint/}
 [SN 13] Visual Studio Code; \url{https://code.visualstudio.com/docs/editor/whyvscode}
 [SN 14] Heroku; \url{https://www.heroku.com/platform}
-[SN 15] Firebase Authentication; \url{https://firebase.google.com/products/auth}
-[SN 17] Firebase Database; \url{https://firebase.google.com/products/realtime-database}
-[SN 18] Firestore; \url{https://firebase.google.com/products/firestore}
-[SN 19] D3; \url{https://www.educative.io/blog/d3js-tutorial}
-[SN 20] Unit Testing; \url{https://en.wikipedia.org/wiki/Unit_testing}
-[SN 21] Firebase Emulators; \url{https://firebase.google.com/docs/rules/unit-tests}
-[SN 22] Jest; \url{https://en.wikipedia.org/wiki/Jest_(JavaScript_framework)}
-[SN 23] PyTest; \url{https://thinkpalm.com/blogs/pytest-a-python-solution-for-test-automation/}
-[SN 24] Selenium; \url{https://en.wikipedia.org/wiki/Selenium_(software)}
-[SN 25] firebase; \url{https://codeburst.io/firebase-spend-more-time-developing-the-features-that-actually-matter-814f57a499af}
 
-[GK 1] GitHub tasks; \url{https://github.com/features/project-management/}
+
+[JK 1] Firebase Authentication; \url{https://firebase.google.com/products/auth}
+[JK 2] Firebase Database; \url{https://firebase.google.com/products/realtime-database}
+[JK 3] Firestore; \url{https://firebase.google.com/products/firestore}
+[JK 4] D3; \url{https://www.educative.io/blog/d3js-tutorial}
+[JK 5] Unit Testing; \url{https://en.wikipedia.org/wiki/Unit_testing}
+[JK 6] Firebase Emulators; \url{https://firebase.google.com/docs/rules/unit-tests}
+[JK 7] Jest; \url{https://en.wikipedia.org/wiki/Jest_(JavaScript_framework)}
+[JK 8] Postman; \url{https://medium.com/aubergine-solutions/api-testing-using-postman-323670c89f6d}
+[JK 9] Selenium; \url{https://en.wikipedia.org/wiki/Selenium_(software)}
+[JK 10] firebase; \url{https://codeburst.io/firebase-spend-more-time-developing-the-features-that-actually-matter-814f57a499af}
+
+
+[GK 1] 
