@@ -13,24 +13,35 @@ This project was developed as part of a fifteen credit module by Grace Keane, Ji
 This chapter will serve as a prelude to the project. The context, objectives and metrics for success and failure will be defined, followed by a thorough summary of the project domain and an introduction into each chapter of the dissertation and its relevance.
 
 \section{Context}
-Why chose data visualisation as a subject for our Applied Project and Minor Dissertation? Towards the end of our third year in college, Ireland was shutdown and effectively put into a lockdown. All colleges, schools and areas where large amounts of people gather were closed or off limits. The reason for the lockdown was the outbreak of a disease which became known as Covid-19, a global pandemic. The first pandemic that the majority of the world's population will have ever experienced. The last global pandemic was the Spanish flu, which lasted from approx 1918 to 1920, this pandemic occurred in three waves, though not simultaneously around the globe.\cite{Spanishflu}\\
+Why choose data visualisation as a subject for our Applied Project and Minor Dissertation? Towards the end of our third year in college, Ireland was shutdown and effectively put into a lockdown. All colleges, schools and areas where large amounts of people gather were closed or off limits. The reason for the lockdown was the outbreak of a disease which became known as Covid-19, a global pandemic. The first pandemic that the majority of the world's population will have ever experienced. The last global pandemic was the Spanish flu, which lasted from approximately 1918 to 1920, this pandemic occurred in three waves, though not simultaneously around the globe.\cite{Spanishflu}\\
+
+\vspace{1mm}
+
 The fact that our on campus learning was curtailed due to the Covid-19 outbreak has had an impact on our learning. Being software students, it was fascinating to see how much real time information was available coming from all directions. Sites like John Hopkins Dashboard tracked Covid-19's progress round the world on a daily basis. Starting off with what looked like small numbers at first, the amount of cases quickly exploded in countries like Italy and Iran, an example of exponential disease growth. If measures we not taken to halt the spread of the virus the rest of the world would eventually experience exponential growth of cases.\\
 
-\vspace{5mm}
+\vspace{1mm}
+\section{Why Visualisation matters}
 
-\textbf{Why Visualisation matters}\\
 There are two useful functions for data visualisation.\\
-a) The dissemination of public health information, with purpose of giving the clearest information possible to the general public.
+a) The dissemination of public health information, with purpose of giving the clearest information possible to the general public.\\
 b) The effective modelling, prediction and forecasting of disease trends for scientists and policy makers.
+
+\vspace{5mm}
 
 Exponential growth is a mathematical concept that is not properly understood by the majority of people.
 "People mistakenly perceive the coronavirus to grow in a linear manner, underestimating its actual potential for exponential growth."\cite{lammers2020correcting}\\
-\vspace{5mm}
-“The complex data are extremely challenging for our cognitive abilities. Visual analytics solutions may support knowledge discovery and problem solving if the needs of the different stakeholders, such as epidemiologists and environmental health specialists, are adequately addressed.”\cite{preim2020survey}
 
-It struck the team that the visual representation of data is a good explanatory tool to show how fast exponential growth can happen. As well as disseminating public health information to the general public and allows experts to perform predictions and modelling based on current trends. This information can help policy makers make the best decisions possible given current conditions.
 \vspace{2mm}
-"It can help researchers and policy makers to identify trends that could be overlooked if the data were reviewed in tabular form" \cite{tebe2020covid19}
+
+“The complex data are extremely challenging for our cognitive abilities. Visual Analytics solutions may support knowledge discovery and problem solving if the needs of the different stakeholders, such as epidemiologists and environmental health specialists, are adequately addressed.”\cite{preim2020survey}
+
+\vspace{5mm}
+
+
+It struck the team that the visual representation of data is a good explanatory tool to show how fast exponential growth can happen. As well as disseminating public health information to the general public and allows experts to perform predictions and modelling based on current trends. This information can help policy makers make the best decisions possible given current conditions. "It can help researchers and policy makers to identify trends that could be overlooked if the data were reviewed in tabular form". \cite{tebe2020covid19}
+
+\vspace{5mm}
+
 
 With this background, the project seemed timely, relevant and interesting.
 It offered the potential to be data rich and ideally suited to a team project. The team felt it was important that the project encouraged the use of existing skills as well as allow for the natural development of new and relevant techniques and processes while also being worthy of the scope of the project.
@@ -38,19 +49,17 @@ It offered the potential to be data rich and ideally suited to a team project. T
 \vspace{5mm} %5mm vertical space
 
 Data visualisation and analysis techniques have been central in the efforts to communicate the statistics as well as the science around the COVID-19 virus. 
-“Data visualization discussions can surface key issues, jump start conversations, and set the stage for further inquiry”.\cite{fontichiaro2021using}
-
-Many websites with interactive dashboards with charts and graphs in different formats are an example of making sense of complex and overwhelming pandemic data sets. 
+“Data visualization discussions can surface key issues, jump start conversations, and set the stage for further inquiry” \cite{fontichiaro2021using}. Many websites have Incorporated interactive dashboards as well as charts and graphs to to visualize complex and overwhelming pandemic data sets. 
 “Visualization plays an important role in epidemic time series analysis and forecasting.”\cite{thorve2018epiviewer}
-
-
 
 \vspace{5mm} %5mm vertical space
 
-The team felt it would be beneficial as well as informative to create a web application that would take large COVID-19 data sets as well as other disease data and create a series of data visualisations from it. To compare past and present viruses to distinguish similarities along with differences. This would provide a clear view of COVID-19 and how similar viruses have spread.
+The team felt it would be beneficial as well as informative to create a web application that would take large COVID-19 data sets as well as other disease data and create a series of data visualisations from it. To compare past and present viruses and distinguish similarities along with differences. This would provide a clear view of COVID-19 and how similar viruses have spread.
 
 \vspace{3mm} %5mm vertical space
 Once the project area had been decided on, each team member focused on a pandemic or epidemic, investigated where to source relevant information for the pandemic or epidemic, and investigated different technologies for displaying data in a visual manner.
+
+\vspace{5mm}
 
 \textbf{Data Visualisation Research}
 \begin{itemize}
@@ -63,15 +72,12 @@ Once the project area had been decided on, each team member focused on a pandemi
     
 \end{itemize}
 
-During the initial research stage, the team were aware of the Spanish Flu as being the most recent pandemic. We thought that it would be interesting to include data for the Spanish flu and other epidemics like smallpox, SARs and MERs. 
-Covid-19 data is very easy to source and the main problem was narrowing down which sources to use.
-Conversely data for the other diseases mentioned above was not so easy to source. The main reason for this is the age of the data, the Spanish Flu pandemic took place over one hundred years ago. Smallpox was finally eradicated in 1980. 
-"Smallpox eradication was one of the greatest scientific and humanitarian achievements of the 20th century."\cite{Smallpox}
-The inclusion of the older disease data provides an interesting counterpoint to the current data rich modelled pandemic.
+During the initial research stage, the team were aware of the Spanish Flu as being the most recent pandemic. We thought that it would be interesting to include data for the Spanish flu and other epidemics like smallpox, SARs and MERs. Covid-19 data is very easy to source and the main problem was narrowing down which sources to use. Conversely data for the other diseases mentioned above was not so easy to source. The main reason for this is the age of the data, the Spanish Flu pandemic took place over one hundred years ago. Smallpox was finally eradicated in 1980. 
+"Smallpox eradication was one of the greatest scientific and humanitarian achievements of the 20th century."\cite{Smallpox} The inclusion of the older disease data provides an interesting counterpoint to the current data rich modelled pandemic.
 
-Data visualisations can give a seemingly very precise picture but it is always reliant on the veracity of the data and may run the risk of all data being equal.
+\vspace{2mm}
 
-"An exponential growth model is usually assumed to characterise the early phase of epidemics. But, this assumption can lead to failure to appropriately capture the profile of the epidemic growth, eventually giving rise to non realistic epidemic forecasts."\cite{tovissode2020use}
+Data visualisations can give a seemingly very precise picture but it is always reliant on the veracity of the data and may run the risk of all data being equal. "An exponential growth model is usually assumed to characterise the early phase of epidemics. But, this assumption can lead to failure to appropriately capture the profile of the epidemic growth, eventually giving rise to non realistic epidemic forecasts"\cite{tovissode2020use}.
 
 
 
@@ -102,7 +108,7 @@ A selection of metrics were outlined specifically for the dissertation, they are
 
 \begin{itemize}
 
-    \item \emph{The final dissertation should be easily understood, allowing readers without knowledge or familiarity of the subject area to form a suitable understanding of the concept and areas discussed.} In order to accurately measure this metric, input was received from family and fellow students, who would kindly read newly integrated sections and provide useful feedback.
+    \item \emph{The final dissertation should be easily understood, allowing readers without knowledge or familiarity of the subject area to form a suitable understanding of the concept and areas discussed.} In order to accurately measure this metric, input was received from family who would kindly read newly integrated sections and provide useful feedback.
 
     \item \emph{The  dissertation should be in order of 10,000 - 15,000 words, excluding appendices as well as approximately 35 pages (excluding diagrams, abstract, TOCs, references, appendices etc.)}
 
@@ -138,29 +144,31 @@ An evaluation of the final applied project against the initial project objective
 \subsection{Conclusion}
 To conclude, a summary of the context and objectives to remind the reader about the overall rationale and goals of the project. Key insights will be identified and reflected on. A final analysis will describe the teams overall experience and what the team learned while working on a project similar to one encountered in the software industry.
 
-
 \chapter{Methodology}
-The first project meeting took place in the final week of September 2020. This meeting consisted of analysing the applied project requirements that had been defined and outlined. The team agreed to choose a topic that would be informative yet beneficial to the end user. It was concluded that the final idea and architecture of the solution should be finalised as soon as possible to allow for necessary research and planned development.
+\section{Project Management and Research}
+This chapter will explore the pre-development process, the approach the team took with development and testing, how the team dealt with various problems faced, and the influence of regular supervisor meetings along with a conclusion based on what impact pre-development research had on the overall project direction.
 
 \vspace{5mm} %5mm vertical space
 
-This chapter will explore the pre-development process, the approach the team took with development and testing, how the team dealt with various problems faced, and the influence of regular supervisor meetings along with a conclusion based on what impact pre-development research had on the overall project direction.
+The first project meeting took place in the final week of September 2020. This meeting consisted of analysing the applied project requirements that had been defined and outlined. The team agreed to choose a topic that would be informative yet beneficial to the end user. It was concluded that the idea and architecture of the solution should be finalised as soon as possible to allow for necessary research and planned development.
 
-\section{Technological Brainstorming and Initial Supervisor Meeting}
+
+\subsection{Brainstorming and Initial Supervisor Meeting}
 Before development began and after the initial project topic was chosen each team member researched various technologies and concepts that could be potentially incorporated into the project. Soon after a brainstorming meeting was conducted to critically analyse each technology researched and the team decided whether each would be of good fit.
 
 \vspace{5mm} %5mm vertical space
 
 The team met prior to the initial supervisor meeting to produce effective ideas and questions to be asked relating to the overall architecture of the solution and the ultimate goals and objectives, these included:
+\vspace{5mm} %5mm vertical space
 
 \begin{itemize}
 
 
-    \item \textbf{What technologies would be of best fit for the project?}
+    \item \textbf{What technologies would be of best fit for the project?} \\
 The team investigated many possible technologies for the project. Chapter three will fully outline our choices and reasoning for selecting these technologies.
 
-    \item \textbf{What benefits would certain methodologies posses compared to others?}
-The advantages and disadvantages of the methodologies, such as Agile and Waterfall, were considered by the team and are outlined in full in Chapter 2.
+    \item \textbf{What benefits would certain methodologies posses compared to others?}\\
+The advantages and disadvantages of the methodologies, such as Agile and Waterfall, were considered by the team and are outlined in full in this chapter.
 \end{itemize}
 
 During the initial supervisor meeting the project idea, potential research, development technologies, development methodology and collaboration approaches were discussed. The team were advised to spend the next few weeks to consider and finalise the overall nature of how the applied project will be designed and implemented.
@@ -184,32 +192,37 @@ After the supervisor meeting the team decided to take this advice on board. Each
 \end{itemize}
 
 \section{Methodology Consideration}
-There where numerous possible methodologies to consider. After discussions with team members, the team agreed to critically analyse and compare \textbf{Waterfall} and \textbf{Agile} to determine which methodology would be of best suit to the applied project. These methodologies are amongst the most popular methodologies used by software development teams.
-
-
-\vspace{70mm} %5mm vertical space
+There where numerous possible methodologies to consider. After discussions with team members, the team agreed to critically analyse and compare \textbf{Waterfall} and \textbf{Agile} to determine which methodology would be of best suited to the applied project. These methodologies are amongst the most popular used by software development teams worldwide.
+\vspace{5mm} %5mm vertical space
 
 
 \section{Determining Development Methodology}
-Following the decision of Agile and Waterfall as an approach to software development, the team began to research the advantages and disadvantages of both, along with deciding which methodology would be best to take when considering the scope, project goals and time frame. A critical analysis and overview of both methodologies were made and a conclusion based on the practical analysis of each in relation to the project was undertaken.
+Following the decision of Agile and Waterfall as an approach to software development, the team began to research the advantages and disadvantages of both, along with deciding which methodology would be best to adapt when considering the scope, project goals and time frame. A critical analysis and overview of both methodologies were made and a conclusion based on the practical analysis of each in relation to the project was undertaken.
 
 \section{Waterfall}
-The Waterfall model is composed of a series of steps, illustrated in \emph{Figure....}. These steps are used to break down a project into linear sequential phases to ease the development process.  \cite{petersen2009waterfall}. Waterfall allows progress to be easily measured, the complete scope of the project is known in advance, which can be preferred based on the type of project and software team. The Waterfall model tends to be among the less flexible approaches, the output of each stage completed is the input for the next and the overall progress follows a fixed downwards path like a waterfall.
-
-\begin{center}
-      \includegraphics[scale=0.46]{img/Waterfall.png}
-\end{center}
-\label{fig:x cubed graph}
-
+The Waterfall model is composed of a series of steps, illustrated in \emph{Figure 2.1}. These steps are used to break down a project into linear sequential phases to ease the development process.  \cite{petersen2009waterfall}. Waterfall allows progress to be easily measured, the complete scope of the project is known in advance, which can be preferred based on the type of project and software team. The Waterfall model tends to be among the less flexible approaches, the output of each stage completed is the input for the next and the overall progress follows a fixed downwards path like a waterfall.
+\begin{figure}[ht]
+    \centering
+    \includegraphics[scale=0.46]{img/Waterfall.png}
+    \caption{Waterfall Methodology}
+    \label{fig:my_label1}
+\end{figure}
 The waterfall model is still a widely used method for working on software projects today. It is arguably the most well known development model, which is likely attributed to how long the model has been around, not to mention the overall simplicity of the model. Each phase is of a waterfall project is completed sequentially and testing is done after tasks are completed. \cite{balaji2012waterfall}.
-
 
 \section{Agile}
 Agile methodologies are a group of software development methods that are based on interactive and incremental development \cite{kumar2012impact}. The term agile stands for 'moving quickly'. It is characterised by an approach that allows rapid and continuous delivery of small and useful software. It takes the view  that production teams should start with simple and predictable approximations to the final requirement and then continue to increment the detail of these requirements throughout the life of the project. Agile methodology has an adaptive team which is able to respond to changing requirements as well as the ability to solve problems even late in the development cycle. \cite{balaji2012waterfall}.
-\begin{center}
-      \includegraphics[scale=0.8]{img/Agile.png}
-\end{center}
-The popularity of Agile development methodologies amongst the software industry has increased drastically, with almost 85.4\% of international surveyed software developers using Agile methodologies in their work. \cite{agileStats} Research has also shown that Agile projects are 28\% more successful than traditional projects. The most important principle of the Agile methodology is customer satisfaction by giving rapid and continuous delivery of small and useful software.
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[scale=0.8]{img/Agile.png}
+    \caption{Agile Methodology}
+    \label{fig:my_label1}
+\end{figure}
+
+The popularity of Agile development methodologies amongst the software industry has increased drastically, with almost 85.4\% of international surveyed software developers using Agile methodologies in their work. Research has also shown that Agile projects are 28\% more successful than traditional projects. The most important principle of the Agile methodology is customer satisfaction by giving rapid and continuous delivery of small and useful software.
+
+
+https://hygger.io/blog/why-agile-is-so-popular-in-project-management/#:~:text=Agile%20projects%20are%2028%25%20more,use%20Agile%20in%20their%20work.&text=27.4%25%20of%20manufacturing%20companies%20rely,on%20the%20combination%20of%20methodologies.
 
 \section{Comparison between Agile and Waterfall}
 Following team meetings, research and analysis, both Agile and Waterfall were critically analysed under the following headings:
@@ -227,6 +240,8 @@ Following team meetings, research and analysis, both Agile and Waterfall were cr
 \end{itemize}
 
 By taking the above headings into an account comparisons were drawn of both methodologies.
+
+\vspace{2mm}
 
 \begin{table}[ht]
   \centering
@@ -247,10 +262,9 @@ By taking the above headings into an account comparisons were drawn of both meth
 \end{table}
 
 
-Following various comparisons between the Agile and Waterfall, it became clear to the team that an Agile approach would best suit the development of the outlined applied project. This approach would aid the development process in numerous ways, these include:
+Following various comparisons between Agile and Waterfall, it became clear to the team that an Agile approach would best suit the development of the outlined applied project. This approach would aid the development process in numerous ways, these include:
 
-\vspace{70mm} %5mm vertical space
-
+\vspace{5mm}
 1. \textbf{Errors can be detected and solved quickly} - The team thought it would be beneficial to be able to detect and solve problems quickly, especially when the team did not have much experience with using GitHub collaboratively together as a team.
 
 2. \textbf{The ability to develop small but functional software via releases} - Based on feedback from our supervisor the priorities of the project could be subject to change. Small incremental changes means there would be flexibility and versatility throughout the development stage.
@@ -271,16 +285,19 @@ Since the beginning of development for the applied project the team set up and a
 
 It provides tools to allow developers to prioritize and visualize the main elements of the project in progress and also created a clear picture of what project tasks need to be started, completed and which tasks are currently in progress.\cite{GitHubtasks}
 
-
-
-\vspace{50mm} %5mm vertical space
+\vspace{5mm} %5mm vertical space
 
 The ability to track project progression on the same platform where the project is being collaborated on is a huge benefit as well as more efficient than using an external project management tracker. 
 
-\begin{center}
-      \includegraphics[scale=0.50]{img/GitHubToDo.PNG}
-\end{center}
-\label{fig:x Github Tasks}
+\vspace{5mm} %5mm vertical space
+
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[scale=0.50]{img/GitHubToDo.PNG}
+    \caption{GitHub Tasks}
+    \label{fig:my_label1}
+\end{figure}
 
 
 The figure above shows the GitHub task sheet used during development of the applied project. It consists of five main columns:
@@ -298,9 +315,10 @@ Completed tasks relating to the front end development were moved from in progres
 Completed test tasks are moved here.
 \end{itemize}
 
+\vspace{50mm} %5mm vertical space
 
 \subsection{Scrum}
-As well as using GitHub Tasks to manage project management, the Scrum methodology was incorporated and employed. The Scrum methodology is designed for teams to break down work into goals that can be completed in a specific time frame called sprints. Sprints are generally one week in length. At the end of each week, a supervisor meeting would be held where the team would discuss their progress with the supervisor.
+As well as using GitHub Tasks to manage project management, the Scrum methodology was incorporated and employed. This development methodology assumes that the project or systems progress is an unpredictable process that can be described as an overall progression \cite{schwaber1997scrum}. The Scrum methodology is designed for teams to break down work into goals that can be completed in a specific time frame called sprints. Sprints are generally one week in length. At the end of each week, a supervisor meeting would be held where the team would discuss their progress with the supervisor.
 
 \vspace{5mm} %5mm vertical space
 
