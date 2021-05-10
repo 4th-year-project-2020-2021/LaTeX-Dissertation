@@ -2,7 +2,9 @@
 
 \chapter*{About this project}
 \paragraph{Abstract}
-Data visualisation has become popular, in part due to everyone's experience with the global pandemic Covid-19. Information is delivered in easy to understand visual representations. As this is an emerging area, the team decided to investigate different methods of data visualisation, see which performed the best for different scenarios and to develop a data visualisation application. The main focus of the application is on Covid-19, data is being generated at least daily worldwide for Covid-19. The application includes examples of other epidemics such as SARs, MERs and historic epidemics of smallpox.
+Data visualisation offers powerful and flexible ways of presenting information. It allows ways of bringing together different streams of information and synthesising them into a coherent and meaningful form. Data visualisation has become popular, in part due to the experience of the global Covid-19 pandemic. Information is delivered in easy to understand visual representations. One of the challenges of the pandemic has been finding ways to present information in a public health context and modelling and forecasting.
+As this is an emerging area, the team decided to investigate different methods of data visualisation, see which performed the best for different scenarios and to develop a data visualisation application. We developed an online application, which utilises the almost real time availability of Covid-19 data and presents this data in clear graphical form.
+The main focus of the application is Covid-19, The application includes examples of earlier epidemics, SARs, MERs and historic epidemics of smallpox. These are provided for some historical context. Front end development used React, the back end development used Flask to write our own API calls. The data tier used Firebase and MongoDB Atlas to store and retrieve static data. Relating to Covid-19: The web application features maps selectable by country, graphs, and charts. Some of the types of data featured are total worldwide cases, total recovered cases, total deaths, and Irish vaccination progress. Relating to historical diseases some of the data featured are case numbers and mortality numbers.
 
 \paragraph{Authors}
 This project was developed as part of a fifteen credit module by Grace Keane, Jina Kim and Shirin Nagle, fourth year students of Galway Mayo Institute of Technology.
@@ -12,14 +14,14 @@ This project was developed as part of a fifteen credit module by Grace Keane, Ji
 \chapter{Introduction}
 
 
-This chapter will outline the context, objectives and metrics for success and failure. Followed by a summary of the project and an introduction into each chapter of the dissertation and its relevance to the project.
+This chapter will outline the context of the project, why the subject matter was chosen and its relevance. We will discuss the project objectives and metrics for success and failure. We will summarise the project by giving a brief introduction into each chapter heading of the dissertation.
 
 \section{Context}
-Why choose data visualisation as a subject for our Applied Project and Minor Dissertation? Towards the end of our third year in college, Ireland was shutdown and effectively put into a lockdown. All colleges, schools and areas where large amounts of people gather were closed or off limits. The reason for the lockdown was the outbreak of a disease which became known as Covid-19, a global pandemic. The first pandemic that the majority of the world's population will have ever experienced. The last global pandemic was the Spanish flu, which lasted from approximately 1918 to 1920, this pandemic occurred in three waves, though not simultaneously around the globe.\cite{Spanishflu}\\
+Why choose data visualisation as a subject for our Applied Project and Minor Dissertation? Towards the end of our third year in college, Ireland was shut down and effectively put into a lockdown. All colleges, schools, and areas where large amounts of people gather were closed or off limits. The reason for the lockdown was the outbreak of a disease which became known as Covid-19, a global pandemic. The first pandemic that the majority of the world's population will have ever experienced. The last global pandemic was the Spanish flu, which lasted from approximately 1918 to 1920, this pandemic occurred in three waves, though not simultaneously around the globe.\cite{Spanishflu}\\
 
 \vspace{1mm}
 
-The fact that our on campus learning was curtailed due to the Covid-19 outbreak has had an impact on our learning. Being software students, it was fascinating to see how much real time information was available coming from all directions. Sites like John Hopkins Dashboard tracked Covid-19's progress round the world on a daily basis. Starting off with what looked like small numbers at first, the amount of cases quickly exploded in countries like Italy and Iran, an example of exponential disease growth. If measures we not taken to halt the spread of the virus the rest of the world would eventually experience exponential growth of cases.\\
+The fact that our on-campus learning was curtailed due to the Covid-19 outbreak has had an impact on our learning. Being software students, it was fascinating to see how much real time information was available coming from all directions. Sites like John Hopkins Dashboard tracked Covid-19's progress round the world on a daily basis. Starting off with what looked like small numbers at first, the amount of cases quickly exploded in countries like Italy and Iran, an example of exponential disease growth. If measures we not taken to halt the spread of the virus the rest of the world would eventually experience exponential growth of cases.\\
 
 \vspace{1mm}
 \section{Why Visualisation matters}
@@ -71,12 +73,16 @@ Once the project area had been decided on, each team member focused on a pandemi
 
 \textbf{Data Visualisation Research}
 \begin{itemize}
-    \item John Hopkins Dashboard
-            An interactive web-based dashboard to track COVID-19 in real time.
-    \item Gap Minder
-            A website that provided a new way of looking at data on a variety of subjects.
-    \item Epi Viewer
-            A research project, based on a web application that provides a framework for exploring, comparing, and organizing temporal data sets.
+    \item John Hopkins Dashboard\\
+            An interactive web-based dashboard to track COVID-19 in real time. This is dashboard is the leading example of Covid-19 dashboard information. It had come to public awareness at the beginning of the pandemic and it's data visualisations shaped the way people began to think about the pandemic.
+    \item Gap Minder\\
+            A company founded in Sweden in 2005, this company developed several innovative data visualizations, including 
+            Trendalyzer a bubble chart software, which was acquired by Google.\cite{bubble}
+            We were interested in this company as a leading force in data visualisation technology. They have changed how
+            statistics are presented.
+            
+    \item EpiViewer\\
+            This is an example that is close to the subject matter and technological scope of our project which involved developing a web application too. It was a large collaborative research project involving nine researchers. They worked on a web application that provides a framework for exploring, comparing, and organizing temporal data sets. To date the website does not seem to be publicly available.
     
 \end{itemize}
 
@@ -106,16 +112,16 @@ To ensure the objectives were reached, the team outlined the following:
 \end{itemize}
 
 \section{Metrics for Success and Failure}
-The outlining criteria for success and failure was essential in ensuring the applied project remained on track.  Each project outlined objectives listed in \emph{Section 1.3} will be reviewed at the end of the project and evaluated in the conclusion section. The initial success and failure objectives defined are outlined in \emph{Section 1.4.1} and \emph{Section 1.4.2}
+In order for the project aims to stay on track the team felt it was important to identify measures for success and failure.  Each project outlined objectives listed in \emph{Section 1.3} will be reviewed at the end of the project and evaluated in the conclusion section. The initial success and failure objectives defined are outlined in \emph{Section 1.4.1} and \emph{Section 1.4.2}
 
 \vspace{5mm} %5mm vertical space
 
 \subsection{Applied Project Dissertation}
-A selection of metrics were outlined specifically for the dissertation, they are as follows.
+For this dissertation we are following the guidelines set out by the module, which are listed below:
 
 \begin{itemize}
 
-    \item \emph{The final dissertation should be easily understood, allowing readers without knowledge or familiarity of the subject area to form a suitable understanding of the concept and areas discussed.} We measured this metric by asking for input from family members. Their feedback was very useful as they are not software students and did not have as much exposure to data visualisation applications.
+    \item \emph{The final dissertation should be easily understood, laid out in a structured and informative manner. Allowing readers without knowledge or familiarity of data visualisation to gain a general understanding of the concept and areas discussed.} We measured this metric by asking for input from family members. Their feedback was very useful as they are not software students and did not have as much exposure to data visualisation applications. This helped us identify areas for exploration that had not occurred to us before consulting our family members.
 
     \item \emph{The  dissertation should be in order of 10,000 - 15,000 words, excluding appendices as well as approximately 35 pages (excluding diagrams, abstract, TOCs, references, appendices etc.)}
 
@@ -137,16 +143,16 @@ A selection of metrics were outlined specifically for the development of the app
 This section contains a brief overview of the dissertation structure and provides a short description of each chapter.
 
 \subsection{Methodology}
-This chapter will discuss the investigation process, comparing software development methods used during the research phase, their results and the effect they had on the direction of the project. The decision making process and factors leading up to the decisions and design implementations will also be discussed. 
+This chapter will discuss the investigation process of prospective development methodologies. The decision making process and factors leading up to the decisions and design implementations will also be discussed. Comparing the software development methodologies  Waterfall and Agile investigated during the research stage. The results of the investigation and how the chosen methodology shaped the development of the project. 
 
 \subsection{Technology Review}
-The technological review will outline the technical aspects of the project. This includes the different technologies, why they were chosen, how they were incorporated and their implementation. The benefits of the selected technologies will be evaluated and compared with similar alternatives.
+The technological review will outline the necessity for version control. Discuss the technologies included in the project, why they were chosen, what role they played in the project. The benefits of the selected technologies will be evaluated and compared with similar available alternatives.
 
 \subsection{System Design}
 A detailed explanation of the overall system architecture will be provided. We created an illustration of how the system architecture works, to explain in a visual way of how each technology interacts in the the architecture.
 
 \subsection{System Evaluation}
-An evaluation of the final applied project against the initial project objectives. The final result of the project will be evaluated including an analysis of areas of software quality, improvements or changes to the overall project.
+This chapter will cover an evaluation of the final applied project against the initial project objectives. The final result of the project will be evaluated including an analysis of areas of software quality, improvements or changes to the overall project.
 
 \subsection{Conclusion}
 To conclude, a summary of the context and objectives to remind the reader about the overall rationale and goals of the project. Key insights will be identified and reflected on. A final analysis will describe the teams overall experience and what the team learned while working on a project similar to one encountered in the software industry.
@@ -161,7 +167,7 @@ The first team project meeting took place in the final week of September 2020. T
 
 
 \subsection{Brainstorming and Initial Supervisor Meeting}
-Before development began and after the initial project topic was chosen each team member researched various technologies and concepts that could be potentially incorporated into the project. Soon after a brainstorming meeting was conducted to critically analyse each technology researched and the team decided whether each would be of good fit.
+Before development began and after the initial project topic was chosen each team member researched various technologies and concepts that could be potentially incorporated into the project. We had a few brainstorming meetings and talked through various options. After our brainstorming meetings we  considered each technology researched and the team decided whether each would be a good fit.
 
 \vspace{5mm} %5mm vertical space
 
@@ -210,14 +216,15 @@ There were numerous possible methodologies to consider. After discussions with t
 Following the decision of Agile and Waterfall as possible appropriate approaches to software development, the team began to research the advantages and disadvantages of both, along with deciding which methodology would be best to use when considering the scope, project goals and time frame. A critical analysis and overview of both methodologies were made and a conclusion based on the practical analysis of each in relation to the project was undertaken.
 
 \section{Waterfall}
-The Waterfall model is composed of a series of steps, illustrated in \emph{Figure 2.1}. These steps are used to break down a project into linear sequential phases to ease the development process.  \cite{petersen2009waterfall}. Waterfall allows progress to be easily measured, the complete scope of the project is known in advance, which can be preferred based on the type of project and software team. The Waterfall model tends to be among the less flexible approaches, the output of each stage completed is the input for the next and the overall progress follows a fixed downwards path like a waterfall.
+The Waterfall model is composed of a series of steps, illustrated in \emph{Figure 2.1}. These steps are used to break down a project into linear sequential phases to ease the development process.  \cite{petersen2009waterfall}. An defining feature of the Waterfall methodology is that the full nature of the project is known in advance. This allows progress to be easily measure, this option can be preferred by developers depending on the type of project and software team. The Waterfall model tends to be among the less flexible approaches, the output of each stage completed is the input for the next and the overall progress follows a fixed downwards path like a waterfall.
 \begin{figure}[ht]
     \centering
     \includegraphics[scale=0.46]{img/Waterfall.png}
     \caption{Waterfall Methodology}
     \label{fig:my_label1}
 \end{figure}
-The waterfall model is still a widely used method for working on software projects today. It is arguably the most well known development model, which is likely attributed to how long the model has been around, not to mention the overall simplicity of the model. Each phase is of a waterfall project is completed sequentially and testing is done after tasks are completed. \cite{balaji2012waterfall}
+The waterfall model is still a widely used method for working on software projects today. It is arguably one of the most well known development models. It is still used for very large projects that have a long development cycle. Particularly used by government agencies for the implementation of large software projects.
+Each phase is of a waterfall project is completed sequentially and testing is done after tasks are completed. \cite{balaji2012waterfall}
 
 \section{Agile}
 Agile methodologies are a group of software development methods that are based on interactive and incremental development \cite{kumar2012impact}. The term agile stands for 'moving quickly'. It is characterised by an approach that allows rapid and continuous delivery of small and useful software. It takes the view  that production teams should start with simple and predictable approximations to the final requirement and then continue to increment the detail of these requirements throughout the life of the project. Agile methodology has an adaptive team which is able to respond to changing requirements as well as the ability to solve problems even late in the development cycle. \cite{balaji2012waterfall}.
@@ -234,7 +241,7 @@ The popularity of Agile development methodologies amongst the software industry 
 
 
 \section{Comparison between Agile and Waterfall}
-During team meetings, research and analysis, both Agile and Waterfall were  analysed under the following headings:
+During team meetings, research and analysis, both Agile and Waterfall were  evaluated under the following headings:
 
 \begin{itemize}
 
@@ -294,12 +301,13 @@ Since the beginning of development for the applied project the team set up and a
 
 \vspace{5mm} %5mm vertical space
 
+GitHub Tasks allows developers to "visualize all of your work and prioritize it right alongside your code with projects boards. See what tasks are planned or in-progress, either in a repository or across your organization". \cite{GitHubtasks}
 
-It provides tools to allow developers to prioritize and visualize the main elements of the project in progress and also created a clear picture of what project tasks need to be started, completed and which tasks are currently in progress.\cite{GitHubtasks}
 
 \vspace{5mm} %5mm vertical space
+Using GitHub Tasks was easy to use, and allowed us to keep track of the project's progress.
+It suited the needs for the project, was very easy to see at a glance what was "to do", what was "in progress" and what was "done". It was a very useful tool which was to easy to access and did not involve another project management tool like Microsoft Project, which are often overly complicated for the task at hand.
 
-The ability to track project progression on the same platform where the project is being collaborated on is beneficial as well as easier to use than using an external project management tracker like Microsoft Project.
 
 \vspace{5mm} %5mm vertical space
 
@@ -335,7 +343,8 @@ At the end of each week, a supervisor meeting would be held where the team would
 
 \vspace{5mm} %5mm vertical space
 
-At the end of each supervisor meeting, the goals for the next Scrum Sprint were defined and discussed in detail. Any new goal was also assigned and recorded in the teams GitHub Tasks board. These tasks were undertaken in a high to low priority order.
+During our weekly supervisory meetings, we discussed what work we had done, areas of work to be completed or started were identified and also advised the supervisor when there were particular development issues that were causing problems for the team. 
+The goals for the next Scrum Sprint were outlined and discussed. New goals were also assigned and recorded in the teams GitHub Tasks board. These tasks were undertaken in a high to low priority order.
 
 \vspace{5mm}
 When the team encountered problems, we tried where possible to resolve them together as a team. We discussed the problems encountered and each team member tried to help with finding a possible cause to the problem and trouble shooting where possible. We researched each other's problems on line and sent relevant research and information to each other.
@@ -549,7 +558,7 @@ It supports authentication using email and password accounts, phone auth, Google
 \vspace{5mm}
 
 To sign a user into our app, we first get authentication credentials from the user. 
-These credentials can be the user's email address and password, or an OAuth token from a federated identity provider. Then, we pass these credentials to the Firebase Authentication SDK. See Figure 3.8 for login and identity code.
+These credentials can be the user's email address and password, or an OAuth token from a federated identity provider. Then, we pass these credentials to the Firebase Authentication SDK. See Figure 3.8 for login and identity code.\cite{fbauth}
 
 \begin{figure}[ht]
     \centering
@@ -833,9 +842,9 @@ Figures 5.4 and 5.5 show a GET and POST request using Flask.
 
 \subsubsection{Selenium}
 
-Selenium is a portable framework for testing web applications.\cite{selenium}\\ This allows the user to create tests which will monitor the users actions performed and log them so that these tests can be run and re-run with the click of a button. Selenium was used to test the overall system functionality and validate the overall application. These tests were ran against Firefox to test essential functionality such as drop down lists in stats, Covid-19, Mers/Sars and for the page navigation links. 
+Selenium is a portable framework for testing web applications.\cite{selenium}\\ This allows the user to create tests which will monitor the users actions performed and log them so that these tests can be run and re-run with the click of a button. Selenium was used to test the system functionality to determine if everything worked as expected. These tests were run on Firefox to test essential functionality, including drop down lists in stats, Covid-19, Mers/Sars, button clicks and for the page navigation links. 
 
-Selenium allowed the testing of vital functionality via automated clicks. In Figure 5.6 the projects Heroku URL is specified for Selenium to run pre-written tests against. By defining specific actions on features by adding their Xpath, Selenium can automate an isolate tests against the specified path to determine if the feature is working smoothly and as expected.
+Selenium uses automated clicks to check the functionality of application. In Figure 5.6 the projects Heroku URL is specified for Selenium to run pre-written tests against. By defining specific actions on features by adding their Xpath, Selenium can automate an isolate tests against the specified path to determine if the feature is working smoothly and as expected.
 \begin{figure}[H]
     \centering
     \includegraphics[scale=0.4]{img/sel.PNG}
@@ -899,6 +908,8 @@ It would be interesting to find other epidemic data sets, for example Ebola or P
 With more data sets it may be possible to track older epidemics and overlay generated graphs to see if there was any new information that could be learned from this comparison.
 \item \textbf{More querying of the existing databases}\\
 We could write more API calls to the database and generate many different types of charts, or map information to other types of graphs.
+\item \textbf{Upload User Data}
+We could set up an option for a user to upload their own data sets and generate different visualisation graphs based on this data.
 \end{itemize}
 
 
@@ -906,13 +917,17 @@ We could write more API calls to the database and generate many different types 
 \subsection{Group Reflections}
 The benefit of hindsight is a wonderful thing, if we had to do it again there are many things we would probably do differently.
 We would try to manage our time more effectively. In hindsight we would make better plans for the project and would know which areas to prioritise and focus on more. We would be more decisive about what did and did not work and cut our losses earlier. Try to improve our research of topics that posed difficulties.
-We most definitely would deploy the project at an earlier stage of development. This would allow us more time to resolve any deployment issues. The project is currently deployed on Heroku but we ran out of time to fix an issue we were having with Flask connection. Having completed the project we feel that if we were to do it again we would be in a very good position to know what worked, what did not work and how to tackle these problems earlier. We definitely would be able to manage our time better a second time around.\\
-\vspace{5mm}
-
-There are many achievements from working on a group project. The biggest achievements we gained from this module would be team working and problem-solving skills. As we had weekly meetings on Teams and discussed everything we needed to complete this project we feel that this has helped us improve in areas like communication and decision making.\\
+We most definitely would deploy the project at an earlier stage of development. This would allow us more time to resolve any deployment issues. The project is currently deployed on Heroku but we ran out of time to fix an issue we were having with Flask connection. Now that we know more about the area of testing we would incorporate some elements of testing methodologies in the project, particularly Behaviour Driven Development as this is an agile software development process. 
+Having completed the project we feel that if we were to do it again we would be in a very good position to know what worked, what did not work and how to tackle these problems earlier. We definitely would be able to manage our time better a second time around.\\
 \vspace{5mm}
 
 We found the project itself difficult at times but we had an excellent working relationship. It is rewarding to think that we completed this project in an unusual environment, normally we would be on Campus and this would have given us more opportunities to meet up between labs and lectures, which we feel would have made the project a bit easier in terms of coordination and especially writing the dissertation.
+
+There are many achievements from working on a group project. The biggest achievements we gained from this module would be team working and problem-solving skills. As we had weekly meetings on Microsoft Teams and discussed everything we needed to complete this project we feel that this has helped us improve in areas like communication and decision making.\\
+An invaluable outcome is the knowledge that what we have learned from doing this project is applicable in many other fields that rely on understanding fast moving data. Fields like logistics, urban planning and traffic flow management. The same underlying principles apply in terms of collating separate streams of information and bringing them together in clear and coherent visualisations. 
+\vspace{5mm}
+
+ In times of crisis the technological tools that are used to face the crisis may be of lasting benefit after the crisis has passed. Remote working and learning have certainly become the norm for many, and data visualisation may become a key tool in understanding an increasingly complex world.
 
 
 
@@ -920,11 +935,11 @@ We found the project itself difficult at times but we had an excellent working r
 
 
 \appendix 
-\chapter{}
+\chapter{Appendix}
 \section{GitHub Link}
 \href{https://github.com/4th-year-project-2020-2021/Final-Year-Project-Data-Visualization}{Final Year Project Link}
 \section{Heroku}
 \href{https://final-year-project-data-visual.herokuapp.com/}{Heroku Link}
 \section{Screencast Link}
-\href{}{Screencast Link}
+\href{https://web.microsoftstream.com/video/d8ab7e52-3528-47bb-8ffe-b484f0ca3987?list=studio}{Screencast Link}
 
